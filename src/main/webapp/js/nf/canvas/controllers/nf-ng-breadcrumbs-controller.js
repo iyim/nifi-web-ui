@@ -140,7 +140,7 @@
                 if (nfCommon.isDefinedAndNotNull(breadcrumbEntity.versionedFlowState) && breadcrumbEntity.permissions.canRead) {
                     return nfCommon.getVersionControlTooltip(breadcrumbEntity.breadcrumb.versionControlInformation);
                 } else {
-                    return 'This Process Group is not under version control.'
+                    return '批处理没有置于版本控制下.'
                 }
             },
 
