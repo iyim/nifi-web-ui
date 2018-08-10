@@ -81,8 +81,8 @@
                     });
                 }).fail(function () {
                     nfDialog.showOkDialog({
-                        headerText: 'Advanced Configuration',
-                        dialogContent: 'Unable to generate access token for accessing the advanced configuration dialog.'
+                        headerText: '高级配置',
+                        dialogContent: '无法生成访问令牌以访问高级配置对话框.'
                     });
                     deferred.resolve();
                 });
