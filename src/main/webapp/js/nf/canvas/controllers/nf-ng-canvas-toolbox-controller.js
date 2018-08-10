@@ -67,15 +67,15 @@
              */
             this.config = {
                 type: {
-                    processor: 'Processor',
-                    inputPort: 'Input Port',
-                    outputPort: 'Output Port',
-                    processGroup: 'Process Group',
-                    remoteProcessGroup: 'Remote Process Group',
-                    connection: 'Connection',
-                    funnel: 'Funnel',
-                    template: 'Template',
-                    label: 'Label'
+                    processor: '处理器',
+                    inputPort: '输入端口',
+                    outputPort: '输出端口',
+                    processGroup: '批处理',
+                    remoteProcessGroup: '远程批处理',
+                    connection: '连接',
+                    funnel: '汇聚',
+                    template: '模板',
+                    label: '标签'
                 },
                 urls: {
                     api: '../nifi-api',
