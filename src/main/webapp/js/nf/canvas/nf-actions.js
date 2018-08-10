@@ -184,7 +184,7 @@
             contentType: 'application/json'
         }).fail(function (xhr, status, error) {
             nfDialog.showOkDialog({
-                headerText: 'Update Resource',
+                headerText: '更新资源',
                 dialogContent: nfCommon.escapeHtml(xhr.responseText)
             });
         });
@@ -294,7 +294,7 @@
                     }
                 };
 
-                setLastRefreshed('Refreshing...');
+                setLastRefreshed('刷新中...');
                 poll(1);
             }
         },
@@ -313,8 +313,8 @@
                     window.open(encodeURI(uri));
                 } else {
                     nfDialog.showOkDialog({
-                        headerText: 'Remote Process Group',
-                        dialogContent: 'No target URI defined.'
+                        headerText: '远程批处理',
+                        dialogContent: '没有目标URI.'
                     });
                 }
             }
@@ -1081,8 +1081,8 @@
 
             // prompt the user before emptying the queue
             nfDialog.showYesNoDialog({
-                headerText: 'Empty Queue',
-                dialogContent: 'Are you sure you want to empty this queue? All FlowFiles waiting at the time of the request will be removed.',
+                headerText: '清空队列',
+                dialogContent: '你确定要清空队列吗? 所有被请求的流文件将被移除.',
                 noText: 'Cancel',
                 yesText: 'Empty',
                 yesHandler: function () {
@@ -1109,7 +1109,7 @@
 
                     // update the button model of the drop request status dialog
                     $('#drop-request-status-dialog').modal('setButtonModel', [{
-                        buttonText: 'Stop',
+                        buttonText: '停止',
                         color: {
                             base: '#728E9B',
                             hover: '#004849',
@@ -1158,7 +1158,7 @@
                                     $('<span class="label"></span>').text(' out of ' + originalTokens[0]).appendTo(results);
                                     $('<span></span>').text(' (' + originalTokens[1] + ')').appendTo(results);
                                 }
-                                $('<span></span>').text(' were removed from the queue.').appendTo(results);
+                                $('<span></span>').text(' 从队列中移除.').appendTo(results);
 
                                 // if this request failed so the error
                                 if (nfCommon.isDefinedAndNotNull(dropRequest.failureReason)) {
@@ -1167,7 +1167,7 @@
 
                                 // display the results
                                 nfDialog.showOkDialog({
-                                    headerText: 'Empty Queue',
+                                    headerText: '清空队列',
                                     dialogContent: results
                                 });
                             }).always(function () {
@@ -1176,8 +1176,8 @@
                         } else {
                             // nothing was removed
                             nfDialog.showOkDialog({
-                                headerText: 'Empty Queue',
-                                dialogContent: 'No FlowFiles were removed.'
+                                headerText: '清空队列',
+                                dialogContent: '没有流文件被删除.'
                             });
 
                             // close the dialog
@@ -1394,8 +1394,8 @@
             // ensure every component is writable
             if (nfCanvasUtils.canModify(selection) === false) {
                 nfDialog.showOkDialog({
-                    headerText: 'Component Position',
-                    dialogContent: 'Must be authorized to modify every component selected.'
+                    headerText: '组件位置',
+                    dialogContent: '必须授权修改所选组件'
                 });
                 return;
             }
@@ -1462,8 +1462,8 @@
             // ensure every component is writable
             if (nfCanvasUtils.canModify(selection) === false) {
                 nfDialog.showOkDialog({
-                    headerText: 'Component Position',
-                    dialogContent: 'Must be authorized to modify every component selected.'
+                    headerText: '组建位置',
+                    dialogContent: '必须授权修改所选组件.'
                 });
                 return;
             }
@@ -1626,8 +1626,8 @@
             // ensure that components have been specified
             if (selection.empty()) {
                 nfDialog.showOkDialog({
-                    headerText: 'Create Template',
-                    dialogContent: "The current selection is not valid to create a template."
+                    headerText: '创建模板',
+                    dialogContent: "当前选择对于创建模板无效."
                 });
                 return;
             }
@@ -1638,15 +1638,15 @@
             // ensure that components specified are valid
             if (selection.empty()) {
                 nfDialog.showOkDialog({
-                    headerText: 'Create Template',
-                    dialogContent: "The current selection is not valid to create a template."
+                    headerText: '创建模板',
+                    dialogContent: "当前选择对于创建模板无效."
                 });
                 return;
             }
 
             // prompt for the template name
             $('#new-template-dialog').modal('setButtonModel', [{
-                buttonText: 'Create',
+                buttonText: '创建',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -1660,8 +1660,8 @@
                         // ensure the template name is not blank
                         if (nfCommon.isBlank(templateName)) {
                             nfDialog.showOkDialog({
-                                headerText: 'Create Template',
-                                dialogContent: "The template name cannot be blank."
+                                headerText: '创建模板',
+                                dialogContent: "模板名称不能为空."
                             });
                             return;
                         }
@@ -1695,8 +1695,8 @@
                             }).done(function () {
                                 // show the confirmation dialog
                                 nfDialog.showOkDialog({
-                                    headerText: 'Create Template',
-                                    dialogContent: "Template '" + nfCommon.escapeHtml(templateName) + "' was successfully created."
+                                    headerText: '创建模板',
+                                    dialogContent: "模板 '" + nfCommon.escapeHtml(templateName) + "' 创建成功."
                                 });
                             }).always(function () {
                                 // clear the template dialog fields
@@ -1707,7 +1707,7 @@
                     }
                 }
             }, {
-                buttonText: 'Cancel',
+                buttonText: '取消',
                 color: {
                     base: '#E3E8EB',
                     hover: '#C7D2D7',
@@ -1828,13 +1828,13 @@
                 // show the appropriate message is the copy fails
                 copySnippet.fail(function (responseText) {
                     // look for a message
-                    var message = 'An error occurred while attempting to copy and paste.';
+                    var message = '试图复制粘贴时出错.';
                     if ($.trim(responseText) !== '') {
                         message = responseText;
                     }
 
                     nfDialog.showOkDialog({
-                        headerText: 'Paste Error',
+                        headerText: '粘贴错误',
                         dialogContent: nfCommon.escapeHtml(message)
                     });
                 });
