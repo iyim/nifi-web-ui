@@ -444,9 +444,9 @@
                                     var restrictionTip = $('<div></div>');
 
                                     if (nfCommon.isBlank(item.usageRestriction)) {
-                                        restrictionTip.append($('<p style="margin-bottom: 3px;"></p>').text('Requires the following permissions:'));
+                                        restrictionTip.append($('<p style="margin-bottom: 3px;"></p>').text('需要以下权限:'));
                                     } else {
-                                        restrictionTip.append($('<p style="margin-bottom: 3px;"></p>').text(item.usageRestriction + ' Requires the following permissions:'));
+                                        restrictionTip.append($('<p style="margin-bottom: 3px;"></p>').text(item.usageRestriction + ' 需要以下权限:'));
                                     }
 
                                     var restrictions = [];
@@ -618,7 +618,7 @@
                     // configure the new processor dialog
                     this.getElement().modal({
                         scrollableContentStyle: 'scrollable',
-                        headerText: 'Add Processor',
+                        headerText: '添加处理器',
                         handler: {
                             resize: function () {
                                 $('#processor-type-description')
@@ -752,7 +752,7 @@
 
                 // update the button model
                 this.modal.update('setButtonModel', [{
-                    buttonText: 'Add',
+                    buttonText: '添加',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -774,7 +774,7 @@
                     }
                 },
                     {
-                        buttonText: 'Cancel',
+                        buttonText: '取消',
                         color: {
                             base: '#E3E8EB',
                             hover: '#C7D2D7',
