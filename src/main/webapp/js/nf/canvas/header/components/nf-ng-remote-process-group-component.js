@@ -126,7 +126,7 @@
 
                     nfDialog.showOkDialog({
                         dialogContent: content,
-                        headerText: 'Configuration Error'
+                        headerText: '配置出错'
                     });
                 } else {
                     nfErrorHandler.handleAjaxError(xhr, status, error);
@@ -164,7 +164,7 @@
                     // configure the new remote process group dialog
                     this.getElement().modal({
                         scrollableContentStyle: 'scrollable',
-                        headerText: 'Add Remote Process Group',
+                        headerText: '增加远程批处理',
                         handler: {
                             close: function () {
                                 $('#new-remote-process-group-uris').val('');
@@ -282,7 +282,7 @@
                 };
 
                 this.modal.update('setButtonModel', [{
-                    buttonText: 'Add',
+                    buttonText: '添加',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -293,7 +293,7 @@
                     }
                 },
                     {
-                        buttonText: 'Cancel',
+                        buttonText: '取消',
                         color: {
                             base: '#E3E8EB',
                             hover: '#C7D2D7',
