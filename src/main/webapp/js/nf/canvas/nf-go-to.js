@@ -423,7 +423,7 @@
             $('#connections-dialog').modal({
                 scrollableContentStyle: 'scrollable',
                 buttons: [{
-                    buttonText: 'Close',
+                    buttonText: '关闭',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -477,11 +477,11 @@
 
             // ensure there are downstream components
             if ($('#connections-container').is(':empty')) {
-                $('#connections-container').html('<span class="unset">No downstream components</span>');
+                $('#connections-container').html('<span class="unset">没有下游组件</span>');
             }
 
             // show the downstream dialog
-            $('#connections-dialog').modal('setHeaderText', 'Downstream Connections').modal('show');
+            $('#connections-dialog').modal('setHeaderText', '下游连接').modal('show');
         },
 
         /**
@@ -517,11 +517,11 @@
 
             // ensure there are upstream components
             if ($('#connections-container').is(':empty')) {
-                $('#connections-container').html('<span class="unset">No upstream components</span>');
+                $('#connections-container').html('<span class="unset">没有上游组件</span>');
             }
 
             // show the upstream dialog
-            $('#connections-dialog').modal('setHeaderText', 'Upstream Connections').modal('show');
+            $('#connections-dialog').modal('setHeaderText', '上游连接').modal('show');
         },
 
         /**
@@ -562,11 +562,11 @@
 
             // ensure there are downstream components
             if ($('#connections-container').is(':empty')) {
-                $('#connections-container').html('<span class="unset">No downstream components</span>');
+                $('#connections-container').html('<span class="unset">没有下游组件</span>');
             }
 
             // show the downstream dialog
-            $('#connections-dialog').modal('setHeaderText', 'Downstream Connections').modal('show');
+            $('#connections-dialog').modal('setHeaderText', '下游连接').modal('show');
         },
 
         /**
@@ -607,11 +607,11 @@
 
             // ensure there are upstream components
             if ($('#connections-container').is(':empty')) {
-                $('#connections-container').html('<span class="unset">No upstream components</span>');
+                $('#connections-container').html('<span class="unset">没有上游组件</span>');
             }
 
             // show the dialog
-            $('#connections-dialog').modal('setHeaderText', 'Upstream Connections').modal('show');
+            $('#connections-dialog').modal('setHeaderText', '上游连接').modal('show');
         },
 
         /**
@@ -647,11 +647,11 @@
 
             // ensure there are downstream components
             if ($('#connections-container').is(':empty')) {
-                $('#connections-container').html('<span class="unset">No downstream components</span>');
+                $('#connections-container').html('<span class="unset">没有下游组件</span>');
             }
 
             // show the downstream dialog
-            $('#connections-dialog').modal('setHeaderText', 'Downstream Connections').modal('show');
+            $('#connections-dialog').modal('setHeaderText', '下游连接').modal('show');
         },
 
         /**
@@ -697,11 +697,11 @@
 
                 // ensure there are upstream components
                 if ($('#connections-container').is(':empty')) {
-                    $('#connections-container').html('<span class="unset">No upstream components</span>');
+                    $('#connections-container').html('<span class="unset">没有上游组件</span>');
                 }
 
                 // show the upstream dialog
-                $('#connections-dialog').modal('setHeaderText', 'Upstream Connections').modal('show');
+                $('#connections-dialog').modal('setHeaderText', '上游连接').modal('show');
             }).fail(nfErrorHandler.handleAjaxError);
         },
 
@@ -748,11 +748,11 @@
 
                 // ensure there are downstream components
                 if ($('#connections-container').is(':empty')) {
-                    $('#connections-container').html('<span class="unset">No downstream components</span>');
+                    $('#connections-container').html('<span class="unset">没有下游组件</span>');
                 }
 
                 // show the downstream dialog
-                $('#connections-dialog').modal('setHeaderText', 'Downstream Connections').modal('show');
+                $('#connections-dialog').modal('setHeaderText', '下游连接').modal('show');
             }).fail(nfErrorHandler.handleAjaxError);
         },
 
@@ -789,11 +789,11 @@
 
             // ensure there are upstream components
             if ($('#connections-container').is(':empty')) {
-                $('#connections-container').html('<span class="unset">No upstream components</span>');
+                $('#connections-container').html('<span class="unset">没有上游组件</span>');
             }
 
             // show the upstream dialog
-            $('#connections-dialog').modal('setHeaderText', 'Upstream Connections').modal('show');
+            $('#connections-dialog').modal('setHeaderText', '上游连接').modal('show');
         },
 
         /**
@@ -827,11 +827,11 @@
 
             // ensure there are downstream components
             if ($('#connections-container').is(':empty')) {
-                $('#connections-container').html('<span class="unset">No downstream components</span>');
+                $('#connections-container').html('<span class="unset">没有下游组件</span>');
             }
 
             // show the downstream dialog
-            $('#connections-dialog').modal('setHeaderText', 'Downstream Connections').modal('show');
+            $('#connections-dialog').modal('setHeaderText', '下游连接').modal('show');
         },
 
         /**
@@ -865,11 +865,11 @@
 
             // ensure there are upstream components
             if ($('#connections-container').is(':empty')) {
-                $('#connections-container').html('<span class="unset">No upstream components</span>');
+                $('#connections-container').html('<span class="unset">没有上游组件</span>');
             }
 
             // show the upstream dialog
-            $('#connections-dialog').modal('setHeaderText', 'Upstream Connections').modal('show');
+            $('#connections-dialog').modal('setHeaderText', '上游连接').modal('show');
         }
     };
 }));
