@@ -233,9 +233,9 @@
             // initialize the component state dialog
             $('#component-state-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Component State',
+                headerText: '组件状态',
                 buttons: [{
-                    buttonText: 'Close',
+                    buttonText: '关闭',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -284,8 +284,8 @@
                         }).fail(nfErrorHandler.handleAjaxError);
                     } else {
                         nfDialog.showOkDialog({
-                            headerText: 'Component State',
-                            dialogContent: 'This component has no state to clear.'
+                            headerText: '组件状态',
+                            dialogContent: '该组件没有状态需要清除.'
                         });
                     }
                 }
@@ -415,7 +415,7 @@
 
                 // only activate the link when appropriate
                 if (canClear === false) {
-                    $('#clear-link').addClass('disabled').attr('title', 'Component state can only be cleared when the component is not actively running');
+                    $('#clear-link').addClass('disabled').attr('title', '组件状态只有在该组件不运行的时候清除');
                 }
 
                 // reset the grid size
