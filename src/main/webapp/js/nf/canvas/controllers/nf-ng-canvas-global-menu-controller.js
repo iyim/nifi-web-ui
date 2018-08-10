@@ -376,7 +376,7 @@
 
                         this.getElement().modal({
                             scrollableContentStyle: 'scrollable',
-                            headerText: 'About Apache NiFi',
+                            headerText: '关于Apache NiFi',
                             handler: {
                                 resize: resizeAbout
                             },
