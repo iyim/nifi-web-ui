@@ -97,7 +97,7 @@
 
             nfDialog.showOkDialog({
                 dialogContent: content,
-                headerText: 'Controller Service'
+                headerText: '控制器服务'
             });
         } else {
             nfErrorHandler.handleAjaxError(xhr, status, error);
@@ -1121,7 +1121,7 @@
 
         // build the button model
         var buttons = [{
-            buttonText: 'Disable',
+            buttonText: '禁用',
             color: {
                 base: '#728E9B',
                 hover: '#004849',
@@ -1133,7 +1133,7 @@
                 }
             }
         }, {
-            buttonText: 'Cancel',
+            buttonText: '取消',
             color: {
                 base: '#E3E8EB',
                 hover: '#C7D2D7',
@@ -1173,7 +1173,7 @@
 
         // build the button model
         var buttons = [{
-            buttonText: 'Enable',
+            buttonText: '可用',
             color: {
                 base: '#728E9B',
                 hover: '#004849',
@@ -1185,7 +1185,7 @@
                 }
             }
         }, {
-            buttonText: 'Cancel',
+            buttonText: '取消',
             color: {
                 base: '#E3E8EB',
                 hover: '#C7D2D7',
@@ -1226,7 +1226,7 @@
 
         // only provide a cancel option
         disableDialog.modal('setButtonModel', [{
-            buttonText: 'Cancel',
+            buttonText: '取消',
             color: {
                 base: '#E3E8EB',
                 hover: '#C7D2D7',
@@ -1261,7 +1261,7 @@
         var setCloseButton = function () {
             $('#disable-controller-service-dialog div.controller-service-canceling').hide();
             disableDialog.modal('setButtonModel', [{
-                buttonText: 'Close',
+                buttonText: '关闭',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -1278,13 +1278,13 @@
             setCloseButton();
 
             nfDialog.showOkDialog({
-                headerText: 'Controller Service',
-                dialogContent: 'Unable to disable due to unauthorized referencing components.'
+                headerText: '控制器服务',
+                dialogContent: '由于未经授权引用组件而无法禁用.'
             });
             return;
         }
 
-        $('#disable-progress-label').text('Steps to disable ' + controllerService.name);
+        $('#disable-progress-label').text('禁用' + controllerService.name + '的步骤');
         var disableReferencingSchedulable = $('#disable-referencing-schedulable').addClass('ajax-loading');
 
         $.Deferred(function (deferred) {
@@ -1327,8 +1327,8 @@
             // inform the user if the action was canceled
             if (canceled === true && $('#nf-ok-dialog').not(':visible')) {
                 nfDialog.showOkDialog({
-                    headerText: 'Controller Service',
-                    dialogContent: 'The request to disable has been canceled. Parts of this request may have already completed. Please verify the state of this service and all referencing components.'
+                    headerText: '控制器服务',
+                    dialogContent: '禁用的请求被取消了. 这个请求的部分可能已经完成. 请校验这个服务和所有引用组件的状态.'
                 });
             }
         });
@@ -1385,7 +1385,7 @@
 
         // only provide a cancel option
         enableDialog.modal('setButtonModel', [{
-            buttonText: 'Cancel',
+            buttonText: '取消',
             color: {
                 base: '#E3E8EB',
                 hover: '#C7D2D7',
@@ -1414,7 +1414,7 @@
         var setCloseButton = function () {
             $('#enable-controller-service-dialog div.controller-service-canceling').hide();
             enableDialog.modal('setButtonModel', [{
-                buttonText: 'Close',
+                buttonText: '关闭',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -1431,13 +1431,13 @@
             setCloseButton();
 
             nfDialog.showOkDialog({
-                headerText: 'Controller Service',
-                dialogContent: 'Unable to enable due to unauthorized referencing components.'
+                headerText: '控制器服务',
+                dialogContent: '由于未经授权引用组件而无法启用.'
             });
             return;
         }
 
-        $('#enable-progress-label').text('Steps to enable ' + controllerService.name);
+        $('#enable-progress-label').text('开启' + controllerService.name + '的步骤');
         var enableControllerService = $('#enable-controller-service').addClass('ajax-loading');
 
         $.Deferred(function (deferred) {
@@ -1490,8 +1490,8 @@
             // inform the user if the action was canceled
             if (canceled === true && $('#nf-ok-dialog').not(':visible')) {
                 nfDialog.showOkDialog({
-                    headerText: 'Controller Service',
-                    dialogContent: 'The request to enable has been canceled. Parts of this request may have already completed. Please verify the state of this service and all referencing components.'
+                    headerText: '控制器服务',
+                    dialogContent: '启用的请求被取消了. 这个请求的部分可能已经完成. 请校验这个服务和所有引用组件的状态.'
                 });
             }
         });
@@ -1528,8 +1528,8 @@
             if (isSaveRequired()) {
                 // see if those changes should be saved
                 nfDialog.showYesNoDialog({
-                    headerText: 'Save',
-                    dialogContent: 'Save changes before going to this Controller Service?',
+                    headerText: '保存',
+                    dialogContent: '在转到此控制器服务之前保存更改?',
                     noHandler: function () {
                         deferred.resolve();
                     },
@@ -1677,7 +1677,7 @@
 
             // initialize the conroller service configuration dialog
             $('#controller-service-configuration').modal({
-                headerText: 'Configure Controller Service',
+                headerText: '配置控制器服务',
                 scrollableContentStyle: 'scrollable',
                 handler: {
                     close: function () {
@@ -1710,7 +1710,7 @@
 
             // initialize the disable service dialog
             $('#disable-controller-service-dialog').modal({
-                headerText: 'Disable Controller Service',
+                headerText: '禁用控制器服务',
                 scrollableContentStyle: 'scrollable',
                 handler: {
                     close: function () {
@@ -1745,17 +1745,17 @@
                 options: [{
                     text: 'Service only',
                     value: config.serviceOnly,
-                    description: 'Enable only this controller service'
+                    description: '只开启控制器服务'
                 }, {
                     text: 'Service and referencing components',
                     value: config.serviceAndReferencingComponents,
-                    description: 'Enable this controller service and enable/start all referencing components'
+                    description: '开启控制器服务和所有相关的组件'
                 }]
             });
 
             // initialize the enable service dialog
             $('#enable-controller-service-dialog').modal({
-                headerText: 'Enable Controller Service',
+                headerText: '开启控制器服务',
                 scrollableContentStyle: 'scrollable',
                 handler: {
                     close: function () {
@@ -1886,7 +1886,7 @@
                 createReferencingComponents(serviceTable, referenceContainer, controllerService.referencingComponents);
 
                 var buttons = [{
-                    buttonText: 'Apply',
+                    buttonText: '应用',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -1907,7 +1907,7 @@
                         }
                     }
                 }, {
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
@@ -1923,7 +1923,7 @@
                 // determine if we should show the advanced button
                 if (nfCommon.isDefinedAndNotNull(controllerService.customUiUrl) && controllerService.customUiUrl !== '') {
                     buttons.push({
-                        buttonText: 'Advanced',
+                        buttonText: '高级',
                         clazz: 'fa fa-cog button-icon',
                         color: {
                             base: '#E3E8EB',
@@ -1956,8 +1956,8 @@
                                 if (isSaveRequired()) {
                                     // see if those changes should be saved
                                     nfDialog.showYesNoDialog({
-                                        headerText: 'Save',
-                                        dialogContent: 'Save changes before opening the advanced configuration?',
+                                        headerText: '保存',
+                                        dialogContent: '打开高级配置前保存?',
                                         noHandler: openCustomUi,
                                         yesHandler: function () {
                                             saveControllerService(serviceTable, controllerServiceEntity).done(function () {
@@ -2084,7 +2084,7 @@
                 // determine if we should show the advanced button
                 if (nfCommon.isDefinedAndNotNull(nfCustomUi) && nfCommon.isDefinedAndNotNull(controllerService.customUiUrl) && controllerService.customUiUrl !== '') {
                     buttons.push({
-                        buttonText: 'Advanced',
+                        buttonText: '高级',
                         clazz: 'fa fa-cog button-icon',
                         color: {
                             base: '#E3E8EB',
@@ -2167,8 +2167,8 @@
         promptToDeleteController: function (serviceTable, controllerServiceEntity) {
             // prompt for deletion
             nfDialog.showYesNoDialog({
-                headerText: 'Delete Controller Service',
-                dialogContent: 'Delete controller service \'' + nfCommon.escapeHtml(controllerServiceEntity.component.name) + '\'?',
+                headerText: '删除控制器服务',
+                dialogContent: '删除控制器服务 \'' + nfCommon.escapeHtml(controllerServiceEntity.component.name) + '\'?',
                 yesHandler: function () {
                     nfControllerService.remove(serviceTable, controllerServiceEntity);
                 }
