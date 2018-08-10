@@ -143,7 +143,7 @@
 
                             // show all processors
                             if (!nfCommon.isEmpty(searchResults.processorResults)) {
-                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-processor"></div>Processors</li>');
+                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-processor"></div>处理器</li>');
                                 $.each(searchResults.processorResults, function (i, processorMatch) {
                                     nfSearchAutocomplete._renderItem(ul, processorMatch);
                                 });
@@ -151,7 +151,7 @@
 
                             // show all process groups
                             if (!nfCommon.isEmpty(searchResults.processGroupResults)) {
-                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-group"></div>Process Groups</li>');
+                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-group"></div>批处理</li>');
                                 $.each(searchResults.processGroupResults, function (i, processGroupMatch) {
                                     nfSearchAutocomplete._renderItem(ul, processGroupMatch);
                                 });
@@ -159,7 +159,7 @@
 
                             // show all remote process groups
                             if (!nfCommon.isEmpty(searchResults.remoteProcessGroupResults)) {
-                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-group-remote"></div>Remote Process Groups</li>');
+                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-group-remote"></div>远程批处理</li>');
                                 $.each(searchResults.remoteProcessGroupResults, function (i, remoteProcessGroupMatch) {
                                     nfSearchAutocomplete._renderItem(ul, remoteProcessGroupMatch);
                                 });
@@ -167,7 +167,7 @@
 
                             // show all connections
                             if (!nfCommon.isEmpty(searchResults.connectionResults)) {
-                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-connect"></div>Connections</li>');
+                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-connect"></div>连接</li>');
                                 $.each(searchResults.connectionResults, function (i, connectionMatch) {
                                     nfSearchAutocomplete._renderItem(ul, connectionMatch);
                                 });
@@ -175,7 +175,7 @@
 
                             // show all input ports
                             if (!nfCommon.isEmpty(searchResults.inputPortResults)) {
-                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-port-in"></div>Input Ports</li>');
+                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-port-in"></div>输入端口</li>');
                                 $.each(searchResults.inputPortResults, function (i, inputPortMatch) {
                                     nfSearchAutocomplete._renderItem(ul, inputPortMatch);
                                 });
@@ -183,7 +183,7 @@
 
                             // show all output ports
                             if (!nfCommon.isEmpty(searchResults.outputPortResults)) {
-                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-port-out"></div>Output Ports</li>');
+                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-port-out"></div>输出端口</li>');
                                 $.each(searchResults.outputPortResults, function (i, outputPortMatch) {
                                     nfSearchAutocomplete._renderItem(ul, outputPortMatch);
                                 });
@@ -191,7 +191,7 @@
 
                             // show all funnels
                             if (!nfCommon.isEmpty(searchResults.funnelResults)) {
-                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-funnel"></div>Funnels</li>');
+                                ul.append('<li class="search-header"><div class="search-result-icon icon icon-funnel"></div>汇聚</li>');
                                 $.each(searchResults.funnelResults, function (i, funnelMatch) {
                                     nfSearchAutocomplete._renderItem(ul, funnelMatch);
                                 });
@@ -199,7 +199,7 @@
 
                             // ensure there were some results
                             if (ul.children().length === 0) {
-                                ul.append('<li class="unset search-no-matches">No results matched the search terms</li>');
+                                ul.append('<li class="unset search-no-matches">没有匹配的搜索结果</li>');
                             }
                         },
                         _renderItem: function (ul, match) {
