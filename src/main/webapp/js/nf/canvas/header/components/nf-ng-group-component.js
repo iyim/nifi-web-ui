@@ -132,7 +132,7 @@
                     // configure the new process group dialog
                     this.getElement().modal({
                         scrollableContentStyle: 'scrollable',
-                        headerText: 'Add Process Group',
+                        headerText: '添加批处理器',
                         handler: {
                             close: function () {
                                 $('#new-process-group-name').val('');
@@ -241,8 +241,8 @@
                         // ensure the group name is specified
                         if (nfCommon.isBlank(groupName)) {
                             nfDialog.showOkDialog({
-                                headerText: 'Create Process Group',
-                                dialogContent: 'The group name is required.'
+                                headerText: '创建批处理器',
+                                dialogContent: '批处理名字必须'
                             });
 
                             deferred.reject();
@@ -257,7 +257,7 @@
                     };
 
                     groupComponent.modal.update('setButtonModel', [{
-                        buttonText: 'Add',
+                        buttonText: '添加',
                         color: {
                             base: '#728E9B',
                             hover: '#004849',
@@ -268,7 +268,7 @@
                         }
                     },
                         {
-                            buttonText: 'Cancel',
+                            buttonText: '取消',
                             color: {
                                 base: '#E3E8EB',
                                 hover: '#C7D2D7',
