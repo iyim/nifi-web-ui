@@ -119,8 +119,8 @@
 
             // show the result dialog
             nfDialog.showOkDialog({
-                headerText: 'Process Group Configuration',
-                dialogContent: 'Process group configuration successfully saved.'
+                headerText: '流程组配置',
+                dialogContent: '流程组配置已成功保存.'
             });
 
             // update the click listener for the updated revision
@@ -190,7 +190,7 @@
                     $('#process-group-comments').removeClass('unset').val(processGroup.comments);
 
                     // populate the header
-                    $('#process-group-configuration-header-text').text(processGroup.name + ' Configuration');
+                    $('#process-group-configuration-header-text').text(processGroup.name + ' 配置');
 
                     setEditable(true);
 
@@ -205,7 +205,7 @@
                         $('#read-only-process-group-comments').removeClass('unset').text(processGroup.comments);
 
                         // populate the header
-                        $('#process-group-configuration-header-text').text(processGroup.name + ' Configuration');
+                        $('#process-group-configuration-header-text').text(processGroup.name + ' 配置');
                     } else {
                         setUnauthorizedText();
                     }
@@ -279,7 +279,7 @@
         $('#process-group-comments').val('');
 
         // reset the header
-        $('#process-group-configuration-header-text').text('Process Group Configuration');
+        $('#process-group-configuration-header-text').text('流程组配置');
     };
 
     var nfProcessGroupConfiguration = {
