@@ -1445,9 +1445,9 @@
 
             updated.select('rect.backpressure-data-size').select('title').text(function (d) {
                 if (nfCommon.isDefinedAndNotNull(d.status.aggregateSnapshot.percentUseBytes)) {
-                    return 'Queue is ' + d.status.aggregateSnapshot.percentUseBytes + '% full based on Back Pressure Data Size Threshold';
+                    return '根据背压数据大小阈值，队列已经占满' + d.status.aggregateSnapshot.percentUseBytes + '%了';
                 } else {
-                    return 'Back Pressure Data Size Threshold is not configured';
+                    return '背压数据大小阈值没有设置';
                 }
             });
         }).promise();
@@ -1485,9 +1485,9 @@
 
             updated.select('rect.backpressure-object').select('title').text(function (d) {
                 if (nfCommon.isDefinedAndNotNull(d.status.aggregateSnapshot.percentUseCount)) {
-                    return 'Queue is ' + d.status.aggregateSnapshot.percentUseCount + '% full based on Back Pressure Object Threshold';
+                    return '根据背压对象阈值，队列已经占满' + d.status.aggregateSnapshot.percentUseCount + '%了';
                 } else {
-                    return 'Back Pressure Object Threshold is not configured';
+                    return '背压对象阈值没有配置';
                 }
             });
         }).promise();
