@@ -216,7 +216,7 @@
                 };
 
                 this.modal.update('setButtonModel', [{
-                    buttonText: 'Add',
+                    buttonText: '添加',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -227,7 +227,7 @@
                     }
                 },
                     {
-                        buttonText: 'Cancel',
+                        buttonText: '取消',
                         color: {
                             base: '#E3E8EB',
                             hover: '#C7D2D7',
@@ -241,7 +241,7 @@
                     }]);
 
                 // update the port type
-                $('#new-port-type').text('Output');
+                $('#new-port-type').text('输出');
 
                 // set the focus and show the dialog
                 this.modal.show();
