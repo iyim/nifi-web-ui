@@ -899,23 +899,23 @@
             var icon = '', label = '';
             if (dataContext.component.validationStatus === 'VALIDATING') {
                 icon = 'validating fa fa-spin fa-circle-notch';
-                label = 'Validating';
+                label = '验证中';
             } else if (dataContext.component.validationStatus === 'INVALID') {
                 icon = 'invalid fa fa-warning';
-                label = 'Invalid';
+                label = '无效';
             } else {
                 if (dataContext.component.state === 'DISABLED') {
                     icon = 'disabled icon icon-enable-false"';
-                    label = 'Disabled';
+                    label = '禁用';
                 } else if (dataContext.component.state === 'DISABLING') {
                     icon = 'disabled icon icon-enable-false"';
-                    label = 'Disabling';
+                    label = '禁用中';
                 } else if (dataContext.component.state === 'ENABLED') {
                     icon = 'enabled fa fa-flash';
-                    label = 'Enabled';
+                    label = '开启';
                 } else if (dataContext.component.state === 'ENABLING') {
                     icon = 'enabled fa fa-flash';
-                    label = 'Enabling';
+                    label = '开启中';
                 }
             }
 
@@ -995,7 +995,7 @@
                 sortable: true,
                 width: 90,
                 maxWidth: 90,
-                toolTip: 'Sorts based on presence of bulletins'
+                toolTip: '根据公告的展示进行排序'
             },
             {
                 id: 'name',
@@ -1342,7 +1342,7 @@
                     }
                 }
             }, {
-                buttonText: 'Cancel',
+                buttonText: '取消',
                 color: {
                     base: '#E3E8EB',
                     hover: '#C7D2D7',
