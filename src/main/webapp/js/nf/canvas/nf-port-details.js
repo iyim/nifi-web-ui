@@ -43,7 +43,7 @@
             // configure the processor details dialog
             $('#port-details').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Port Details',
+                headerText: '端口详情',
                 buttons: [{
                     buttonText: 'Ok',
                     color: {
