@@ -65,9 +65,9 @@
     var initPortConfigurationDialog = function () {
         $('#port-configuration').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Configure Port',
+            headerText: '配置端口',
             buttons: [{
-                buttonText: 'Apply',
+                buttonText: '应用',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -137,7 +137,7 @@
 
                                 nfDialog.showOkDialog({
                                     dialogContent: content,
-                                    headerText: 'Port Configuration'
+                                    headerText: '端口配置'
                                 });
                             } else {
                                 // close the details panel
@@ -151,7 +151,7 @@
                 }
             },
                 {
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
