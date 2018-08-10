@@ -776,7 +776,7 @@
         }).done(function () {
             // show the import dialog
             $('#import-flow-version-dialog').modal('setHeaderText', 'Import Version').modal('setButtonModel', [{
-                buttonText: 'Import',
+                buttonText: '导入',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -791,7 +791,7 @@
                     }
                 }
             }, {
-                buttonText: 'Cancel',
+                buttonText: '取消',
                 color: {
                     base: '#E3E8EB',
                     hover: '#C7D2D7',
@@ -842,8 +842,8 @@
                 });
             } else {
                 nfDialog.showOkDialog({
-                    headerText: 'Flow Versions',
-                    dialogContent: 'This flow does not have any versions available.'
+                    headerText: '流版本',
+                    dialogContent: '此流程没有任何可用版本.'
                 });
             }
         }).fail(nfErrorHandler.handleAjaxError).always(function () {
@@ -1071,7 +1071,7 @@
 
         // update the button model of the change version status dialog
         $('#change-version-status-dialog').modal('setButtonModel', [{
-            buttonText: 'Stop',
+            buttonText: '停止',
             color: {
                 base: '#728E9B',
                 hover: '#004849',
@@ -1149,7 +1149,7 @@
 
                 // update the button model
                 $('#change-version-status-dialog').modal('setButtonModel', [{
-                    buttonText: 'Close',
+                    buttonText: '关闭',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -1193,7 +1193,7 @@
 
                         // update the button model
                         $('#change-version-status-dialog').modal('setButtonModel', [{
-                            buttonText: 'Close',
+                            buttonText: '关闭',
                             color: {
                                 base: '#728E9B',
                                 hover: '#004849',
@@ -1398,8 +1398,8 @@
                 totalLabel.text(nfCommon.formatInteger(totalDifferences));
             } else {
                 nfDialog.showOkDialog({
-                    headerText: 'Local Changes',
-                    dialogContent: 'This Process Group does not have any local changes.'
+                    headerText: '本地更改',
+                    dialogContent: '此流程组没有任何本地更改.'
                 });
             }
         }).fail(nfErrorHandler.handleAjaxError);
@@ -1421,7 +1421,7 @@
 
                 // update the button model of the revert status dialog
                 $('#change-version-status-dialog').modal('setButtonModel', [{
-                    buttonText: 'Stop',
+                    buttonText: '停止',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -1493,7 +1493,7 @@
 
                         // update the button model
                         $('#change-version-status-dialog').modal('setButtonModel', [{
-                            buttonText: 'Close',
+                            buttonText: '关闭',
                             color: {
                                 base: '#728E9B',
                                 hover: '#004849',
@@ -1537,7 +1537,7 @@
 
                                 // update the button model
                                 $('#change-version-status-dialog').modal('setButtonModel', [{
-                                    buttonText: 'Close',
+                                    buttonText: '关闭',
                                     color: {
                                         base: '#728E9B',
                                         hover: '#004849',
@@ -1579,8 +1579,8 @@
                 submitRevertRequest().done(processRevertResponse);
             } else {
                 nfDialog.showOkDialog({
-                    headerText: 'Revert Changes',
-                    dialogContent: 'This Process Group is not currently under version control.'
+                    headerText: '还原更改',
+                    dialogContent: '此批处理目前不在版本控制.'
                 });
             }
         }).fail(nfErrorHandler.handleAjaxError);
@@ -1593,9 +1593,9 @@
             // initialize the flow version dialog
             $('#save-flow-version-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Save Flow Version',
+                headerText: '保存流程版本',
                 buttons: [{
-                    buttonText: 'Save',
+                    buttonText: '保存',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -1626,7 +1626,7 @@
                         }
                     }
                 }, {
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
@@ -1658,7 +1658,7 @@
             // configure the drop request status dialog
             $('#change-version-status-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Change Flow Version',
+                headerText: '更改流程版本',
                 handler: {
                     close: function () {
                         // clear the current button model
@@ -1670,9 +1670,9 @@
             // init the revert local changes dialog
             $('#revert-local-changes-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Revert Local Changes',
+                headerText: '还原本地更改',
                 buttons: [{
-                    buttonText: 'Revert',
+                    buttonText: '还原',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -1687,7 +1687,7 @@
                         }
                     }
                 }, {
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
@@ -1709,9 +1709,9 @@
             // init the show local changes dialog
             $('#show-local-changes-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Show Local Changes',
+                headerText: '查看本地更改',
                 buttons: [{
-                    buttonText: 'Close',
+                    buttonText: '关闭',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -1875,16 +1875,16 @@
                             deferred.resolve();
                         }).fail(function () {
                             nfDialog.showOkDialog({
-                                headerText: 'Change Version',
-                                dialogContent: 'Unable to load available versions for this Process Group.'
+                                headerText: '更改版本',
+                                dialogContent: '无法加载此批处理的可用版本.'
                             });
 
                             deferred.reject();
                         });
                     } else {
                         nfDialog.showOkDialog({
-                            headerText: 'Change Version',
-                            dialogContent: 'This Process Group is not currently under version control.'
+                            headerText: '更改版本',
+                            dialogContent: '此批处理目前不受版本控制.'
                         });
 
                         deferred.reject();
@@ -1893,7 +1893,7 @@
             }).done(function () {
                 // show the dialog
                 $('#import-flow-version-dialog').modal('setHeaderText', 'Change Version').modal('setButtonModel', [{
-                    buttonText: 'Change',
+                    buttonText: '更改',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -1906,7 +1906,7 @@
                         }
                     }
                 }, {
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
@@ -1929,8 +1929,8 @@
         stopVersionControl: function (processGroupId) {
             // prompt the user before disconnecting
             nfDialog.showYesNoDialog({
-                headerText: 'Stop Version Control',
-                dialogContent: 'Are you sure you want to stop version control?',
+                headerText: '停止版本控制',
+                dialogContent: '确定要停止版本控制吗?',
                 noText: 'Cancel',
                 yesText: 'Disconnect',
                 yesHandler: function () {
@@ -1957,14 +1957,14 @@
                                 updateVersionControlInformation(processGroupId, undefined);
 
                                 nfDialog.showOkDialog({
-                                    headerText: 'Disconnect',
-                                    dialogContent: 'This Process Group is no longer under version control.'
+                                    headerText: '断开连接',
+                                    dialogContent: '此批处理不再受版本控制.'
                                 });
                             }).fail(nfErrorHandler.handleAjaxError);
                         } else {
                             nfDialog.showOkDialog({
-                                headerText: 'Disconnect',
-                                dialogContent: 'This Process Group is not currently under version control.'
+                                headerText: '断开连接',
+                                dialogContent: '此批处理目前不受版本控制.'
                             })
                         }
                     }).fail(nfErrorHandler.handleAjaxError);
