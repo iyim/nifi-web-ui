@@ -116,7 +116,7 @@
 
                         // configure the button model
                         $('#connection-configuration').modal('setButtonModel', [{
-                            buttonText: 'Add',
+                            buttonText: '添加',
                             color: {
                                 base: '#728E9B',
                                 hover: '#004849',
@@ -136,7 +136,7 @@
                             }
                         },
                             {
-                                buttonText: 'Cancel',
+                                buttonText: '取消',
                                 color: {
                                     base: '#E3E8EB',
                                     hover: '#C7D2D7',
@@ -154,8 +154,8 @@
                     } else {
                         // there are no relationships for this processor
                         nfDialog.showOkDialog({
-                            headerText: 'Connection Configuration',
-                            dialogContent: '\'' + nfCommon.escapeHtml(processor.name) + '\' does not support any relationships.'
+                            headerText: '连接配置',
+                            dialogContent: '\'' + nfCommon.escapeHtml(processor.name) + '\' 不支持任何关系.'
                         });
 
                         // reset the dialog
@@ -185,7 +185,7 @@
                 connectionSourceDeferred.done(function () {
                     // configure the button model
                     $('#connection-configuration').modal('setButtonModel', [{
-                        buttonText: 'Add',
+                        buttonText: '添加',
                         color: {
                             base: '#728E9B',
                             hover: '#004849',
@@ -202,7 +202,7 @@
                         }
                     },
                         {
-                            buttonText: 'Cancel',
+                            buttonText: '取消',
                             color: {
                                 base: '#E3E8EB',
                                 hover: '#C7D2D7',
@@ -369,14 +369,14 @@
 
                     deferred.resolve();
                 } else {
-                    var message = '\'' + nfCommon.escapeHtml(processGroupName) + '\' does not have any output ports.';
+                    var message = '\'' + nfCommon.escapeHtml(processGroupName) + '\' 没有任何输出端口.';
                     if (nfCommon.isEmpty(processGroupContents.outputPorts) === false) {
                         message = 'Not authorized for any output ports in \'' + nfCommon.escapeHtml(processGroupName) + '\'.';
                     }
 
                     // there are no output ports for this process group
                     nfDialog.showOkDialog({
-                        headerText: 'Connection Configuration',
+                        headerText: '连接配置',
                         dialogContent: message
                     });
 
@@ -452,7 +452,7 @@
                 } else {
                     // there are no relationships for this processor
                     nfDialog.showOkDialog({
-                        headerText: 'Connection Configuration',
+                        headerText: '连接配置',
                         dialogContent: '\'' + nfCommon.escapeHtml(remoteProcessGroup.name) + '\' does not have any output ports.'
                     });
 
@@ -601,7 +601,7 @@
                 } else {
                     // there are no relationships for this processor
                     nfDialog.showOkDialog({
-                        headerText: 'Connection Configuration',
+                        headerText: '连接配置',
                         dialogContent: '\'' + nfCommon.escapeHtml(processGroupName) + '\' does not have any input ports.'
                     });
 
@@ -677,7 +677,7 @@
                 } else {
                     // there are no relationships for this processor
                     nfDialog.showOkDialog({
-                        headerText: 'Connection Configuration',
+                        headerText: '连接配置',
                         dialogContent: '\'' + nfCommon.escapeHtml(remoteProcessGroup.name) + '\' does not have any input ports.'
                     });
 
@@ -1045,7 +1045,7 @@
             }).fail(function (xhr, status, error) {
                 if (xhr.status === 400 || xhr.status === 404 || xhr.status === 409) {
                     nfDialog.showOkDialog({
-                        headerText: 'Connection Configuration',
+                        headerText: '连接配置',
                         dialogContent: nfCommon.escapeHtml(xhr.responseText),
                     });
                 } else {
@@ -1293,7 +1293,7 @@
                 $('#connection-configuration-tabs').find('li:first').click();
 
                 // configure the header and show the dialog
-                $('#connection-configuration').modal('setHeaderText', 'Create Connection').modal('show');
+                $('#connection-configuration').modal('setHeaderText', '创建连接').modal('show');
 
                 // add the ellipsis if necessary
                 $('#connection-configuration div.relationship-name').ellipsis();
@@ -1406,7 +1406,7 @@
 
                     // configure the button model
                     $('#connection-configuration').modal('setButtonModel', [{
-                        buttonText: 'Apply',
+                        buttonText: '应用',
                         color: {
                             base: '#728E9B',
                             hover: '#004849',
@@ -1444,7 +1444,7 @@
                         }
                     },
                         {
-                            buttonText: 'Cancel',
+                            buttonText: '取消',
                             color: {
                                 base: '#E3E8EB',
                                 hover: '#C7D2D7',
@@ -1462,7 +1462,7 @@
                         }]);
 
                     // show the details dialog
-                    $('#connection-configuration').modal('setHeaderText', 'Configure Connection').modal('show');
+                    $('#connection-configuration').modal('setHeaderText', '连接配置').modal('show');
 
                     // add the ellipsis if necessary
                     $('#connection-configuration div.relationship-name').ellipsis();
