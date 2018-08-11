@@ -23,12 +23,12 @@
                 <div class="settings-left">
                     <div class="setting">
                         <input type="hidden" id=""/>
-                        <div class="setting-header">Heap <span id="utilization-heap"></span></div>
+                        <div class="setting-header">堆 <span id="utilization-heap"></span></div>
                         <div class="setting-field">
                             <table id="heap-table">
                                 <tbody>
                                 <tr>
-                                    <td class="memory-header setting-name">Max:</td>
+                                    <td class="memory-header setting-name">最大值:</td>
                                 </tr>
                                 <tr>
                                     <td><span id="max-heap"></span></td>
@@ -37,7 +37,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Total:</td>
+                                    <td class="setting-name">总共:</td>
                                 </tr>
                                 <tr>
                                     <td><span id="total-heap"></span></td>
@@ -46,7 +46,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Used:</td>
+                                    <td class="setting-name">已使用:</td>
                                 </tr>
                                 <tr>
                                     <td><span id="used-heap"></span></td>
@@ -55,7 +55,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Free:</td>
+                                    <td class="setting-name">空闲:</td>
                                 </tr>
                                 <tr>
                                     <td><span id="free-heap"></span></td>
@@ -72,12 +72,12 @@
                 <div class="spacer"></div>
                 <div class="settings-right">
                     <div class="setting">
-                        <div class="setting-header">Non-heap <span id="utilization-non-heap"></span></div>
+                        <div class="setting-header">非堆 <span id="utilization-non-heap"></span></div>
                         <div class="setting-field">
                             <table id="non-heap-table">
                                 <tbody>
                                 <tr>
-                                    <td class="memory-header setting-name">Max:</td>
+                                    <td class="memory-header setting-name">最大值:</td>
                                 </tr>
                                 <tr>
                                     <td><span id="max-non-heap"></span></td>
@@ -86,7 +86,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Total:</td>
+                                    <td class="setting-name">总共:</td>
                                 </tr>
                                 <tr>
                                     <td><span id="total-non-heap"></span></td>
@@ -95,7 +95,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Used:</td>
+                                    <td class="setting-name">已使用:</td>
                                 </tr>
                                 <tr>
                                     <td><span id="used-non-heap"></span></td>
@@ -104,7 +104,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Free:</td>
+                                    <td class="setting-name">空闲:</td>
                                 </tr>
                                 <tr>
                                     <td><span id="free-non-heap"></span></td>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="clear"></div>
                 <div class="setting">
-                    <div class="setting-header">Garbage Collection</div>
+                    <div class="setting-header">垃圾收集</div>
                     <div id="garbage-collection-container" class="setting-field">
                         <table id="garbage-collection-table">
                             <tbody></tbody>
@@ -128,12 +128,12 @@
                     </div>
                 </div>
                 <div class="setting">
-                    <div class="setting-header">Runtime</div>
+                    <div class="setting-header">运行时</div>
                     <div id="jvm-runtime-container" class="setting-field">
                         <table id="jvm-runtime-table">
                             <tbody>
                                 <tr>
-                                    <td class="setting-name">Uptime:</td>
+                                    <td class="setting-name">正常运行时间:</td>
                                 </tr>
                                 <tr>
                                     <td><span id="uptime"></span></td>
@@ -149,7 +149,7 @@
             <div id="system-tab-content"class="configuration-tab">
                 <div class="settings-left">
                     <div class="setting">
-                        <div class="setting-name">Available Cores:</div>
+                        <div class="setting-name">可用内核:</div>
                         <div class="setting-field">
                             <div id="available-processors"></div>
                         </div>
@@ -159,7 +159,7 @@
                 <div class="settings-right">
                     <div class="setting">
                         <div class="setting-name">
-                            Core Load Average:
+                            核心负载平均值:
                             <div class="fa fa-question-circle" alt="Info" title="Core load average for the last minute. Not available on all platforms."></div>
                         </div>
                         <div class="setting-field">
@@ -169,19 +169,19 @@
                 </div>
                 <div class="clear"></div>
                 <div class="setting">
-                    <div class="setting-header">FlowFile Repository Storage</div>
+                    <div class="setting-header">流文件仓库存储</div>
                     <div class="setting-field">
                         <div id="flow-file-repository-storage-usage-container"></div>
                     </div>
                 </div>
                 <div class="setting">
-                    <div class="setting-header">Content Repository Storage</div>
+                    <div class="setting-header">内容仓库存储</div>
                     <div class="setting-field">
                         <div id="content-repository-storage-usage-container"></div>
                     </div>
                 </div>
                 <div class="setting">
-                    <div class="setting-header">Provenance Repository Storage</div>
+                    <div class="setting-header">源仓库存储</div>
                     <div class="setting-field">
                         <div id="provenance-repository-storage-usage-container"></div>
                     </div>
@@ -191,26 +191,26 @@
                 <div class="setting">
                     <div class="setting-header">NiFi</div>
                     <dl class="setting-attributes-list">
-                        <dt>NiFi Version</dt><dd><span id="version-nifi"></span></dd>
-                        <dt>Tag</dt><dd><span id="version-build-tag"></span></dd>
-                        <dt>Build Date/Time</dt><dd><span id="version-build-timestamp"></span></dd>
-                        <dt>Branch</dt><dd><span id="version-build-branch"></span></dd>
-                        <dt>Revision</dt><dd><span id="version-build-revision"></span></dd>
+                        <dt>NiFi 版本</dt><dd><span id="version-nifi"></span></dd>
+                        <dt>标签</dt><dd><span id="version-build-tag"></span></dd>
+                        <dt>编译 日期/时间</dt><dd><span id="version-build-timestamp"></span></dd>
+                        <dt>分支</dt><dd><span id="version-build-branch"></span></dd>
+                        <dt>校订</dt><dd><span id="version-build-revision"></span></dd>
                     </dl>
                 </div>
                 <div class="setting">
                     <div class="setting-header">Java</div>
                     <dl class="setting-attributes-list">
-                        <dt>Version</dt><dd><span id="version-java-version"></span></dd>
+                        <dt>版本</dt><dd><span id="version-java-version"></span></dd>
                         <dt>Vendor</dt><dd><span id="version-java-vendor"></span></dd>
                     </dl>
                 </div>
                 <div class="setting">
-                    <div class="setting-header">Operating System</div>
+                    <div class="setting-header">操作系统</div>
                     <dl class="setting-attributes-list">
-                        <dt>Name</dt><dd><span id="version-os-name"></span></dd>
-                        <dt>Version</dt><dd><span id="version-os-version"></span></dd>
-                        <dt>Architecture</dt><dd><span id="version-os-arch"></span></dd>
+                        <dt>名称</dt><dd><span id="version-os-name"></span></dd>
+                        <dt>版本</dt><dd><span id="version-os-version"></span></dd>
+                        <dt>结构</dt><dd><span id="version-os-arch"></span></dd>
                     </dl>
                 </div>
             </div>
