@@ -31,7 +31,7 @@
     </div>
     <button id="cluster-process-group-refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
     <div id="cluster-process-group-summary-last-refreshed-container" class="last-refreshed-container">
-        Last updated:&nbsp;<span id="cluster-process-group-summary-last-refreshed" class="value-color"></span>
+        上次更新:&nbsp;<span id="cluster-process-group-summary-last-refreshed" class="value-color"></span>
     </div>
     <div id="cluster-process-group-summary-loading-container" class="loading-container"></div>
 </div>
