@@ -115,8 +115,8 @@
                 }
             }).fail(function () {
                 nfDialog.showOkDialog({
-                    headerText: 'Provenance',
-                    dialogContent: 'Unable to generate access token for downloading content.'
+                    headerText: '源',
+                    dialogContent: '无法生成用于下载内容的访问令牌.'
                 });
             });
         };
@@ -153,8 +153,8 @@
                         deferred.resolve(uiExtensionToken, downloadToken);
                     }).fail(function () {
                         nfDialog.showOkDialog({
-                            headerText: 'Provenance',
-                            dialogContent: 'Unable to generate access token for viewing content.'
+                            headerText: '源',
+                            dialogContent: '无法生成用于查看内容的访问令牌.'
                         });
                         deferred.reject();
                     });
@@ -232,7 +232,7 @@
 
             $('#event-details-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Provenance Event',
+                headerText: '源事件',
                 buttons: [{
                     buttonText: 'Ok',
                     color: {
@@ -315,8 +315,8 @@
                     contentType: 'application/json'
                 }).done(function (response) {
                     nfDialog.showOkDialog({
-                        headerText: 'Provenance',
-                        dialogContent: 'Successfully submitted replay request.'
+                        headerText: '源',
+                        dialogContent: '成功提交了重播请求.'
                     });
                 }).fail(nfErrorHandler.handleAjaxError);
 
@@ -397,9 +397,9 @@
             // configure the search dialog
             $('#provenance-search-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Search Events',
+                headerText: '搜索事件',
                 buttons: [{
-                    buttonText: 'Search',
+                    buttonText: '搜索',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -461,7 +461,7 @@
                     }
                 },
                     {
-                        buttonText: 'Cancel',
+                        buttonText: '取消',
                         color: {
                             base: '#E3E8EB',
                             hover: '#C7D2D7',
@@ -496,7 +496,7 @@
             // initialize the dialog
             $('#provenance-query-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Searching provenance events...'
+                headerText: '搜索源事件中...'
             });
         };
 
@@ -1159,7 +1159,7 @@
 
                 // show the 'searching...' dialog
                 $('#provenance-query-dialog').modal('setButtonModel', [{
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
@@ -1236,7 +1236,7 @@
                         if (!nfCommon.isEmpty(provenance.results.errors)) {
                             var errors = provenance.results.errors;
                             nfDialog.showOkDialog({
-                                headerText: 'Provenance',
+                                headerText: '源',
                                 dialogContent: nfCommon.formatUnorderedList(errors),
                             });
                         }
@@ -1338,7 +1338,7 @@
                                 field.text(nfCommon.formatDuration(value));
                             }
                         } else {
-                            field.html('<span class="unset">No value set</span>');
+                            field.html('<span class="unset">没有设值</span>');
                         }
                     };
 
@@ -1456,7 +1456,7 @@
                         if (nfCommon.isDefinedAndNotNull(value)) {
                             element.removeClass('unset').text(value);
                         } else {
-                            element.addClass('unset').text('No value previously set');
+                            element.addClass('unset').text('之前没有设定值');
                         }
                     };
 
