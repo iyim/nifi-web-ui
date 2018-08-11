@@ -19,7 +19,7 @@
     <div id="status-history-refresh-container">
         <button id="status-history-refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
         <div id="status-history-last-refreshed-container" class="last-refreshed-container">
-            Last updated:&nbsp;<span id="status-history-last-refreshed"></span>
+            上次更新:&nbsp;<span id="status-history-last-refreshed"></span>
         </div>
         <div id="status-history-loading-container" class="loading-container"></div>
     </div>
