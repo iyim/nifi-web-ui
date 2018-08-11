@@ -107,43 +107,43 @@
     var policyTypeListing = [{
         text: 'view the user interface',
         value: 'flow',
-        description: 'Allows users to view the user interface'
+        description: '允许用户查看用户界面'
     }, {
         text: 'access the controller',
         value: 'controller',
-        description: 'Allows users to view/modify the controller including Reporting Tasks, Controller Services, and Nodes in the Cluster'
+        description: '允许用户查看/修改控制器，包括集群中的报告任务，控制器服务和节点'
     }, {
         text: 'query provenance',
         value: 'provenance',
-        description: 'Allows users to submit a Provenance Search and request Event Lineage'
+        description: '允许用户提交原型搜索并请求事件沿袭'
     }, {
         text: 'access restricted components',
         value: 'restricted-components',
-        description: 'Allows users to create/modify restricted components assuming other permissions are sufficient'
+        description: '假设其他权限足够，允许用户创建/修改受限制的组件'
     }, {
         text: 'access all policies',
         value: 'policies',
-        description: 'Allows users to view/modify the policies for all components'
+        description: '允许用户查看/修改所有组件的策略'
     }, {
         text: 'access users/user groups',
         value: 'tenants',
-        description: 'Allows users to view/modify the users and user groups'
+        description: '允许用户查看/修改用户和用户组'
     }, {
         text: 'retrieve site-to-site details',
         value: 'site-to-site',
-        description: 'Allows other NiFi instances to retrieve Site-To-Site details of this NiFi'
+        description: '允许其他NiFi实例检索此NiFi的站点到站点详细信息'
     }, {
         text: 'view system diagnostics',
         value: 'system',
-        description: 'Allows users to view System Diagnostics'
+        description: '允许用户查看系统诊断'
     }, {
         text: 'proxy user requests',
         value: 'proxy',
-        description: 'Allows proxy machines to send requests on the behalf of others'
+        description: '允许代理计算机代表其他人发送请求'
     }, {
         text: 'access counters',
         value: 'counters',
-        description: 'Allows users to view/modify Counters'
+        description: '允许用户查看/修改计数器'
     }];
 
     var nfCommon = {
@@ -371,7 +371,7 @@
             if (nfCommon.isDefinedAndNotNull(dataContext.bundle)) {
                 markup += ('<div style="float: left;">' + nfCommon.escapeHtml(dataContext.bundle.version) + '</div>');
             } else {
-                markup += '<div style="float: left;">unversioned</div>';
+                markup += '<div style="float: left;">未版本控制</div>';
             }
 
             if (!nfCommon.isEmpty(dataContext.controllerServiceApis)) {
@@ -498,7 +498,7 @@
                         if ($('#current-user').text() !== nfCommon.ANONYMOUS_USER_TEXT && !$('#anonymous-user-alert').is(':visible')) {
                             // if the token will expire before the next interval minus some bonus time, notify the user to re-login
                             $('#anonymous-user-alert').show().qtip($.extend({}, nfCommon.config.tooltipConfig, {
-                                content: 'Your session will expire soon. Please log in again to avoid being automatically logged out.',
+                                content: '您的会话即将过期。请再次登录以避免自动注销.',
                                 position: {
                                     my: 'top right',
                                     at: 'bottom left'
@@ -527,7 +527,7 @@
 
             // alert user's of anonymous access
             anonymousUserAlert.show().qtip($.extend({}, nfCommon.config.tooltipConfig, {
-                content: 'You are accessing with limited authority. Log in or request an account to access with additional authority granted to you by an administrator.',
+                content: '您访问权限有限。使用其他有权限的账户登录.',
                 position: {
                     my: 'top right',
                     at: 'bottom left'
