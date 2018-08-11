@@ -28,14 +28,14 @@
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Within group</div>
+                        <div class="setting-name">在组内</div>
                         <div class="setting-field">
                             <div id="read-only-connection-source-group-name"></div>
                         </div>
                     </div>
                     <div id="read-only-relationship-names-container" class="setting">
                         <div class="setting-name">
-                            Relationships
+                            关系
                             <div class="fa fa-question-circle" alt="Info" title="Selected relationships are in bold."></div>
                         </div>
                         <div class="setting-field">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Within group</div>
+                        <div class="setting-name">在组内</div>
                         <div class="setting-field">
                             <div id="read-only-connection-target-group-name"></div>
                         </div>
@@ -62,7 +62,7 @@
             <div id="read-only-connection-settings-tab-content" class="configuration-tab">
                 <div class="settings-left">
                     <div class="setting">
-                        <div class="setting-name">Name</div>
+                        <div class="setting-name">名称</div>
                         <div class="setting-field">
                             <span id="read-only-connection-name"></span>
                         </div>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="setting">
                         <div class="setting-name">
-                            FlowFile expiration
+                            FlowFile期限
                             <div class="fa fa-question-circle" alt="Info" title="The maximum amount of time an object may be in the flow before it will be automatically aged out of the flow."></div>
                         </div>
                         <div class="setting-field">
@@ -85,7 +85,7 @@
                     </div>
                     <div class="setting">
                         <div class="setting-name">
-                            Back pressure object threshold
+                            背压对象阈值
                             <div class="fa fa-question-circle" alt="Info" title="The maximum number of objects that can be queued before back pressure is applied."></div>
                         </div>
                         <div class="setting-field">
@@ -95,7 +95,7 @@
                     </div>
                     <div class="setting">
                         <div class="setting-name">
-                            Back pressure data size threshold
+                            背压数据大小阈值
                             <div class="fa fa-question-circle" alt="Info" title="The maximum data size of objects that can be queued before back pressure is applied."></div>
                         </div>
                         <div class="setting-field">
