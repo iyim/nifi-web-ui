@@ -19,7 +19,7 @@
     <div class="dialog-content">
         <div class="settings-left">
             <div id="enable-controller-service-service-container" class="setting">
-                <div class="setting-name">Service</div>
+                <div class="setting-name">服务</div>
                 <div class="setting-field">
                     <span id="enable-controller-service-id" class="hidden"></span>
                     <div id="enable-controller-service-name"></div>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div id="enable-controller-service-scope-container" class="setting">
-                <div class="setting-name">Scope</div>
+                <div class="setting-name">范围</div>
                 <div class="setting-field">
                     <div id="enable-controller-service-scope"></div>
                 </div>
@@ -38,17 +38,17 @@
                 <div class="setting-field">
                     <ol id="enable-controller-service-progress">
                         <li>
-                            Enabling this controller service
+                            启用此控制器服务
                             <div id="enable-controller-service" class="enable-referencing-components"></div>
                             <div class="clear"></div>
                         </li>
                         <li class="referencing-component">
-                            Enabling referencing controller services
+                            启用相关控制器服务
                             <div id="enable-referencing-services" class="enable-referencing-components"></div>
                             <div class="clear"></div>
                         </li>
                         <li class="referencing-component">
-                            Starting referencing processors and reporting tasks
+                            启动相关处理器和报告任务
                             <div id="enable-referencing-schedulable" class="enable-referencing-components"></div>
                             <div class="clear"></div>
                         </li>
@@ -60,7 +60,7 @@
         <div class="settings-right">
             <div class="setting">
                 <div class="setting-name">
-                    Referencing Components
+                    相关组件
                     <div class="fa fa-question-circle" alt="Info" title="Other components referencing this controller service."></div>
                 </div>
                 <div class="setting-field">
@@ -70,6 +70,6 @@
         </div>
     </div>
     <div class="controller-service-canceling hidden unset">
-        Canceling...
+        取消中...
     </div>
 </div>
