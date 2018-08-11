@@ -65,7 +65,7 @@
             // initialize the dialog
             $('#lineage-query-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Computing FlowFile lineage...'
+                headerText: '计算流文件归属中...'
             });
         };
 
@@ -774,7 +774,7 @@
 
                         // show the 'searching...' dialog
                         $('#lineage-query-dialog').modal('setButtonModel', [{
-                            buttonText: 'Cancel',
+                            buttonText: '取消',
                             color: {
                                 base: '#E3E8EB',
                                 hover: '#C7D2D7',
@@ -852,8 +852,8 @@
                                 } else {
                                     // inform the user that no results were found
                                     nfDialog.showOkDialog({
-                                        headerText: 'Lineage Results',
-                                        dialogContent: 'The lineage search has completed successfully but there no results were found. The events may have aged off.'
+                                        headerText: '谱系结果',
+                                        dialogContent: '谱系搜索已成功完成，但未找到任何结果。事件可能已经过时了.'
                                     });
                                 }
 
@@ -1343,7 +1343,7 @@
 
                 // show the 'searching...' dialog
                 $('#lineage-query-dialog').modal('setButtonModel', [{
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
@@ -1397,7 +1397,7 @@
                     if (!nfCommon.isEmpty(lineage.results.errors)) {
                         var errors = lineage.results.errors;
                         nfDialog.showOkDialog({
-                            headerText: 'Process Lineage',
+                            headerText: '流程沿袭',
                             dialogContent: nfCommon.formatUnorderedList(errors)
                         });
 
