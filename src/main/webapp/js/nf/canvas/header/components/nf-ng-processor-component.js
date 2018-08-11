@@ -719,7 +719,7 @@
                     // ensure something was selected
                     if (name === '' || processorType === '') {
                         nfDialog.showOkDialog({
-                            headerText: 'Add Processor',
+                            headerText: '添加处理器',
                             dialogContent: 'The type of processor to create must be selected.'
                         });
                     } else {

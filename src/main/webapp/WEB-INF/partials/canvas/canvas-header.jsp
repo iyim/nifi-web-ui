@@ -19,7 +19,7 @@
     <img id="nifi-logo" src="images/nifi-logo.svg">
     <div flex layout="row" layout-align="space-between center">
         <div id="component-container">
-            <button title="{{appCtrl.serviceProvider.headerCtrl.toolboxCtrl.config.type.processor}}"
+            <button title="{{appCtrl.serviceProvider.headerCtrl. .config.type.processor}}"
                     id="processor-component"
                     class="component-button icon icon-processor"
                     ng-disabled="!appCtrl.nf.CanvasUtils.canWriteCurrentGroup();"
