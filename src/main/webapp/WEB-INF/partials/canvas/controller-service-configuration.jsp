@@ -22,7 +22,7 @@
             <div id="controller-service-standard-settings-tab-content" class="configuration-tab">
                 <div class="settings-left">
                     <div class="setting">
-                        <div class="setting-name">Name</div>
+                        <div class="setting-name">名称</div>
                         <div class="controller-service-editable setting-field">
                             <input type="text" id="controller-service-name" name="controller-service-name" class="setting-input"/>
                         </div>
@@ -37,17 +37,17 @@
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Type</div>
+                        <div class="setting-name">类型</div>
                         <div class="setting-field">
                             <span id="controller-service-type"></span>
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Bundle</div>
+                        <div class="setting-name">包</div>
                         <div id="controller-service-bundle" class="setting-field"></div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Supports Controller Service</div>
+                        <div class="setting-name">支持控制器服务</div>
                         <div id="controller-service-compatible-apis" class="setting-field"></div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                 <div class="settings-right">
                     <div class="setting">
                         <div class="setting-name">
-                            Referencing Components
+                            引用组件
                             <div class="fa fa-question-circle" alt="Info" title="Other components referencing this controller service."></div>
                         </div>
                         <div class="setting-field">
@@ -70,7 +70,7 @@
             <div id="controller-service-comments-tab-content" class="configuration-tab">
                 <textarea cols="30" rows="4" id="controller-service-comments" name="controller-service-comments" class="controller-service-editable setting-input"></textarea>
                 <div class="setting controller-service-read-only hidden">
-                    <div class="setting-name">Comments</div>
+                    <div class="setting-name">注释</div>
                     <div class="setting-field">
                         <span id="read-only-controller-service-comments"></span>
                     </div>
