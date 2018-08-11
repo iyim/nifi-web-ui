@@ -18,7 +18,7 @@
 <div id="port-details" class="hidden medium-dialog">
     <div class="dialog-content">
         <div class="port-setting">
-            <div class="setting-name">Port name</div>
+            <div class="setting-name">端口名</div>
             <div class="setting-field">
                 <span id="read-only-port-name"></span>
             </div>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="port-setting">
-            <div class="setting-name">Comments</div>
+            <div class="setting-name">注释</div>
             <div class="setting-field">
                 <div id="read-only-port-comments"></div>
             </div>
