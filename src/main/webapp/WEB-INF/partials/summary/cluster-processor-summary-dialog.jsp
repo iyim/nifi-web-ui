@@ -32,7 +32,7 @@
     </div>
     <button id="cluster-processor-refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
     <div id="cluster-processor-summary-last-refreshed-container" class="last-refreshed-container">
-        Last updated:&nbsp;<span id="cluster-processor-summary-last-refreshed" class="value-color"></span>
+        上次更新:&nbsp;<span id="cluster-processor-summary-last-refreshed" class="value-color"></span>
     </div>
     <div id="cluster-processor-summary-loading-container" class="loading-container"></div>
 </div>
