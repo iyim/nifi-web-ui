@@ -22,7 +22,7 @@
             <div id="details-standard-settings-tab-content" class="details-tab">
                 <div class="settings-left">
                     <div class="setting">
-                        <div class="setting-name">Name</div>
+                        <div class="setting-name">名称</div>
                         <div class="setting-field">
                             <span id="read-only-processor-name"></span>
                         </div>
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Type</div>
+                        <div class="setting-name">类型</div>
                         <div id="read-only-processor-type" class="setting-field"></div>
                         <div class="clear"></div>
                     </div>
@@ -47,7 +47,7 @@
                     <div class="setting">
                         <div class="penalty-duration-setting">
                             <div class="setting-name">
-                                Penalty duration
+                                惩罚期限
                                 <div class="fa fa-question-circle" alt="Info" title="The amount of time used when this processor penalizes a FlowFile."></div>
                             </div>
                             <div class="setting-field">
@@ -56,7 +56,7 @@
                         </div>
                         <div class="yield-duration-setting">
                             <div class="setting-name">
-                                Yield duration
+                                让出持续时间
                                 <div class="fa fa-question-circle" alt="Info" title="When a processor yields, it will not be scheduled again until this amount of time elapses."></div>
                             </div>
                             <div class="setting-field">
@@ -68,7 +68,7 @@
                     <div class="setting">
                         <div class="bulletin-setting">
                             <div class="setting-name">
-                                Bulletin level
+                                公告级别
                                 <div class="fa fa-question-circle" alt="Info" title="The level at which this processor will generate bulletins."></div>
                             </div>
                             <div class="setting-field">
@@ -82,7 +82,7 @@
                 <div class="settings-right">
                     <div class="setting">
                         <div class="setting-name">
-                            Automatically terminate relationships
+                            自动终止关系
                             <div class="fa fa-question-circle" alt="Info" title="Will automatically terminate FlowFiles sent to all relationships in bold."></div>
                         </div>
                         <div class="setting-field">
@@ -96,7 +96,7 @@
                     <div class="setting">
                         <div class="scheduling-strategy-setting">
                             <div class="setting-name">
-                                Scheduling strategy
+                                调度策略
                                 <div class="fa fa-question-circle" alt="Info" title="The strategy used to schedule this processor."></div>
                             </div>
                             <div class="setting-field">
@@ -108,7 +108,7 @@
                     <div class="setting">
                         <div class="concurrently-schedulable-tasks-setting">
                             <div class="setting-name">
-                                Concurrent tasks
+                                并发任务
                                 <div class="fa fa-question-circle" alt="Info" title="The number of tasks that should be concurrently scheduled for this processor."></div>
                             </div>
                             <div class="setting-field">
@@ -117,7 +117,7 @@
                         </div>
                         <div id="read-only-run-schedule" class="scheduling-period-setting">
                             <div class="setting-name">
-                                Run schedule
+                                运行计划
                                 <div class="fa fa-question-circle" alt="Info" title="The minimum number of seconds that should elapse between task executions."></div>
                             </div>
                             <div class="setting-field">
@@ -129,7 +129,7 @@
                     <div id="read-only-execution-node-options" class="setting">
                         <div class="execution-node-setting">
                             <div class="setting-name">
-                                Execution
+                                执行
                                 <div class="fa fa-question-circle" alt="Info" title="The node(s) that this processor will be scheduled to run on."></div>
                             </div>
                             <div class="setting-field">
@@ -143,7 +143,7 @@
                 <div class="settings-right">
                     <div class="setting">
                         <div class="setting-name">
-                            Run duration
+                            运行时间
                             <div class="fa fa-question-circle" alt="Info" title="When scheduled to run, the processor will continue running for up to this duration. A run duration of 0ms will execute once when scheduled."></div>
                         </div>
                         <div class="setting-field">
@@ -157,7 +157,7 @@
             </div>
             <div id="details-processor-comments-tab-content" class="details-tab">
                 <div class="setting">
-                    <div class="setting-name">Comments</div>
+                    <div class="setting-name">注释</div>
                     <div class="setting-field">
                         <div id="read-only-processor-comments"></div>
                     </div>
