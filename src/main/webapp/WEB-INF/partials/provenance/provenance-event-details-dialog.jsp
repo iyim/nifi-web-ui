@@ -25,12 +25,12 @@
                 <div class="settings-left">
                     <div id="event-details">
                         <div class="event-detail">
-                            <div class="detail-name">Time</div>
+                            <div class="detail-name">时间</div>
                             <div id="provenance-event-time" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="detail-name">Event Duration</div>
+                            <div class="detail-name">活动持续时间</div>
                             <div id="provenance-event-duration" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
@@ -40,7 +40,7 @@
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="detail-name">Type</div>
+                            <div class="detail-name">类型</div>
                             <div id="provenance-event-type" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
@@ -50,28 +50,28 @@
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="detail-name">File Size</div>
+                            <div class="detail-name">文件大小</div>
                             <div id="provenance-event-file-size" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="detail-name">Component Id</div>
+                            <div class="detail-name">组件 Id</div>
                             <div id="provenance-event-component-id" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="detail-name">Component Name</div>
+                            <div class="detail-name">组件名字</div>
                             <div id="provenance-event-component-name" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="detail-name">Component Type</div>
+                            <div class="detail-name">组件类型</div>
                             <div id="provenance-event-component-type" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div id="additional-provenance-details"></div>
                         <div class="event-detail">
-                            <div class="detail-name">Details</div>
+                            <div class="detail-name">详情</div>
                             <div id="provenance-event-details" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
@@ -80,11 +80,11 @@
                 <div class="spacer">&nbsp;</div>
                 <div class="settings-right">
                     <div id="parent-flowfiles">
-                        <div class="event-header">Parent FlowFiles (<span id="parent-flowfile-count"></span>)</div>
+                        <div class="event-header">父流文件 (<span id="parent-flowfile-count"></span>)</div>
                         <div id="parent-flowfiles-container" class="flowfile-container"></div>
                     </div>
                     <div id="child-flowfiles">
-                        <div class="event-header">Child FlowFiles (<span id="child-flowfile-count"></span>)</div>
+                        <div class="event-header">子流文件 (<span id="child-flowfile-count"></span>)</div>
                         <div id="child-flowfiles-container"class="flowfile-container"></div>
                     </div>
                 </div>
@@ -92,10 +92,10 @@
             </div>
             <div id="attributes-tab-content" class="details-tab">
                 <div id="attributes-details">
-                    <div id="attributes-header" class="event-header">Attribute Values</div>
+                    <div id="attributes-header" class="event-header">属性值</div>
                     <div id="modified-attribute-toggle-container">
                         <div id="modified-attribute-toggle" class="nf-checkbox checkbox-unchecked"></div>
-                        <div id="modified-attribute-toggle-label" class="nf-checkbox-label">Show modified attributes only</div>
+                        <div id="modified-attribute-toggle-label" class="nf-checkbox-label">仅显示修改的属性</div>
                         <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
@@ -105,9 +105,9 @@
             <div id="content-tab-content" class="details-tab">
                 <div class="settings-left">
                     <div id="input-content-details" class="content-details">
-                        <div id="input-content-header" class="event-header">Input Claim</div>
+                        <div id="input-content-header" class="event-header">输入声明</div>
                         <div class="event-detail">
-                            <div class="content-detail-name">Container</div>
+                            <div class="content-detail-name">容器</div>
                             <div id="input-content-container" class="content-detail-value"></div>
                             <div class="clear"></div>
                         </div>
@@ -117,17 +117,17 @@
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="content-detail-name">Identifier</div>
+                            <div class="content-detail-name">指示器</div>
                             <div id="input-content-identifier" class="content-detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="content-detail-name">Offset</div>
+                            <div class="content-detail-name">偏移</div>
                             <div id="input-content-offset" class="content-detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="content-detail-name">Size</div>
+                            <div class="content-detail-name">大小</div>
                             <div id="input-content-size" class="content-detail-value"></div>
                             <div id="input-content-bytes" class="content-detail-value hidden"></div>
                             <div class="clear"></div>
@@ -142,9 +142,9 @@
                 <div class="spacer">&nbsp;</div>
                 <div class="settings-right">
                     <div id="output-content-details" class="content-details">
-                        <div class="event-header">Output Claim</div>
+                        <div class="event-header">输出声明</div>
                         <div class="event-detail">
-                            <div class="content-detail-name">Container</div>
+                            <div class="content-detail-name">容器</div>
                             <div id="output-content-container" class="content-detail-value"></div>
                             <div class="clear"></div>
                         </div>
@@ -154,17 +154,17 @@
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="content-detail-name">Identifier</div>
+                            <div class="content-detail-name">指示器</div>
                             <div id="output-content-identifier" class="content-detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="content-detail-name">Offset</div>
+                            <div class="content-detail-name">偏移</div>
                             <div id="output-content-offset" class="content-detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="event-detail">
-                            <div class="content-detail-name">Size</div>
+                            <div class="content-detail-name">大小</div>
                             <div id="output-content-size" class="content-detail-value"></div>
                             <div id="output-content-bytes" class="content-detail-value hidden"></div>
                             <div class="clear"></div>
@@ -180,7 +180,7 @@
                 <div id="replay-details" class="content-details hidden">
                     <div class="event-header">Replay</div>
                     <div id="replay-content-connection" class="event-detail">
-                        <div class="content-detail-name">Connection Id</div>
+                        <div class="content-detail-name">连接 Id</div>
                         <div id="replay-connection-id" class="content-detail-value"></div>
                         <div class="clear"></div>
                     </div>
