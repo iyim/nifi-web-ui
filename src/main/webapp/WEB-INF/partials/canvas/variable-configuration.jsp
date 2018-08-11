@@ -20,7 +20,7 @@
         <div class="settings-left">
             <div class="setting">
                 <div style="float: left;">
-                    <div class="setting-name">Process Group</div>
+                    <div class="setting-name">流程组</div>
                     <div class="setting-field">
                         <span id="process-group-variable-registry"></span>
                         <span id="variable-registry-process-group-id" class="hidden"></span>
@@ -33,7 +33,7 @@
             <div id="variable-update-status" class="hidden">
                 <div class="setting">
                     <div class="setting-name">
-                        Steps to update variables
+                        更新变量的步骤
                     </div>
                     <div class="setting-field">
                         <ol id="variable-update-steps"></ol>
@@ -45,7 +45,7 @@
         <div class="settings-right">
             <div class="setting">
                 <div class="setting-name">
-                    Variables
+                    变量
                 </div>
                 <div class="setting-field">
                     <div id="affected-components-context"></div>
@@ -53,7 +53,7 @@
             </div>
             <div class="setting">
                 <div class="setting-name">
-                    Referencing Processors
+                    相关处理器
                     <div class="fa fa-question-circle" alt="Info" title="Processors referencing this variable."></div>
                 </div>
                 <div class="setting-field">
@@ -62,7 +62,7 @@
             </div>
             <div class="setting">
                 <div class="setting-name">
-                    Referencing Controller Services
+                    相关控制器服务
                     <div class="fa fa-question-circle" alt="Info" title="Controller Services referencing this variable."></div>
                 </div>
                 <div class="setting-field">
@@ -71,7 +71,7 @@
             </div>
             <div class="setting">
                 <div class="setting-name">
-                    Unauthorized referencing components
+                    未经授权的引用组件
                     <div class="fa fa-question-circle" alt="Info" title="Referencing components for which READ or WRITE permissions are not granted."></div>
                 </div>
                 <div class="setting-field">
@@ -80,12 +80,12 @@
             </div>
         </div>
     </div>
-    <div id="variable-message">Variables do not support sensitive values and will be included when versioning a Process Group.</div>
+    <div id="variable-message">变量不支持敏感值，并且在对流程组进行版本控制时将包含进去.</div>
 </div>
 <div id="new-variable-dialog" class="dialog cancellable small-dialog hidden">
     <div class="dialog-content">
         <div>
-            <div class="setting-name">Variable name</div>
+            <div class="setting-name">变量名称</div>
             <div class="setting-field new-variable-name-container">
                 <input id="new-variable-name" type="text"/>
             </div>
