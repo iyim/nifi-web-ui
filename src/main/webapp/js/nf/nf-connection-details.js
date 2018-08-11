@@ -389,7 +389,7 @@
 
             // configure the connection details dialog
             $('#connection-details').modal({
-                headerText: 'Connection Details',
+                headerText: '连接详情',
                 scrollableContentStyle: 'scrollable',
                 buttons: [{
                     buttonText: 'Ok',
