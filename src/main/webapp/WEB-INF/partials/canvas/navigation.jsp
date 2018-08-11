@@ -33,7 +33,7 @@
              ng-click="appCtrl.serviceProvider.graphControlsCtrl.expand($event)">
             <div class="graph-control-header-icon fa fa-compass">
             </div>
-            <div class="graph-control-header">Navigate</div>
+            <div class="graph-control-header">导航</div>
             <div class="graph-control-header-action">
                 <div class="graph-control-expansion fa fa-plus-square-o pointer"></div>
             </div>
@@ -73,7 +73,7 @@
              ng-click="appCtrl.serviceProvider.graphControlsCtrl.expand($event)">
             <div class="graph-control-header-icon fa fa-hand-o-up">
             </div>
-            <div class="graph-control-header">Operate</div>
+            <div class="graph-control-header">操作</div>
             <div class="graph-control-header-action">
                 <div class="graph-control-expansion fa fa-plus-square-o pointer"></div>
             </div>
