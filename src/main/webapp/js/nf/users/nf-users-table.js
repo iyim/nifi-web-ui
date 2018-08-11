@@ -58,9 +58,9 @@
 
     var initUserDeleteDialog = function () {
         $('#user-delete-dialog').modal({
-            headerText: 'Delete Account',
+            headerText: '删除账户',
             buttons: [{
-                buttonText: 'Delete',
+                buttonText: '删除',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -92,7 +92,7 @@
                     }
                 }
             }, {
-                buttonText: 'Cancel',
+                buttonText: '取消',
                 color: {
                     base: '#E3E8EB',
                     hover: '#C7D2D7',
@@ -403,7 +403,7 @@
      */
     var initUserDialog = function () {
         $('#user-dialog').modal({
-            headerText: 'User/Group',
+            headerText: '用户/组',
             buttons: [{
                 buttonText: 'Ok',
                 color: {
@@ -463,7 +463,7 @@
                     }
                 }
             }, {
-                buttonText: 'Cancel',
+                buttonText: '取消',
                 color: {
                     base: '#E3E8EB',
                     hover: '#C7D2D7',
@@ -509,9 +509,9 @@
      */
     var initUserPoliciesDialog = function () {
         $('#user-policies-dialog').modal({
-            headerText: 'User Policies',
+            headerText: '用户政策',
             buttons: [{
-                buttonText: 'Close',
+                buttonText: '关闭',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
