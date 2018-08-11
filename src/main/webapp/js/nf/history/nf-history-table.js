@@ -67,7 +67,7 @@
     var initDetailsDialog = function () {
         $('#action-details-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Action Details',
+            headerText: '执行细节',
             buttons: [{
                 buttonText: 'Ok',
                 color: {
@@ -102,11 +102,11 @@
             options: [{
                 text: 'by id',
                 value: 'by id',
-                description: 'Filters based on the id of the component that was modified'
+                description: '过滤器基于已修改组件的ID'
             }, {
                 text: 'by user',
                 value: 'by user',
-                description: 'Filters based on the user that performed the action'
+                description: '基于执行操作的用户的过滤器'
             }]
         });
 
@@ -126,7 +126,7 @@
         // configure the filter dialog
         $('#history-filter-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Filter History',
+            headerText: '过滤器历史记录',
             buttons: [{
                 buttonText: 'Filter',
                 color: {
@@ -184,7 +184,7 @@
                 }
             },
                 {
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
@@ -217,9 +217,9 @@
         // configure the filter dialog
         $('#history-purge-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Purge History',
+            headerText: '清除历史',
             buttons: [{
-                buttonText: 'Purge',
+                buttonText: '清除',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -241,23 +241,23 @@
                             var endDateTime = endDate + ' ' + endTime;
                             var timezone = $('.timezone:first').text();
                             nfDialog.showYesNoDialog({
-                                headerText: 'History',
-                                dialogContent: "Are you sure you want to delete all history before '" + nfCommon.escapeHtml(endDateTime) + " " + nfCommon.escapeHtml(timezone) + "'?",
+                                headerText: '历史记录',
+                                dialogContent: "您确定要删除 '" + nfCommon.escapeHtml(endDateTime) + " " + nfCommon.escapeHtml(timezone) + "'之前的所有历史记录吗？?",
                                 yesHandler: function () {
                                     purgeHistory(endDateTime);
                                 }
                             });
                         } else {
                             nfDialog.showOkDialog({
-                                headerText: 'History',
-                                dialogContent: 'The end date must be specified.'
+                                headerText: '历史记录',
+                                dialogContent: '必须指定结束日期.'
                             });
                         }
                     }
                 }
             },
                 {
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
@@ -484,27 +484,27 @@
         if (nfCommon.isDefinedAndNotNull(actionDetails)) {
             if (action.operation === 'Configure') {
                 detailsMarkup.append(
-                    $('<div class="action-detail"><div class="history-details-name">Name</div>' + nfCommon.formatValue(actionDetails.name) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Value</div>' + nfCommon.formatValue(actionDetails.value) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Previous Value</div>' + nfCommon.formatValue(actionDetails.previousValue) + '</div>'));
+                    $('<div class="action-detail"><div class="history-details-name">名称</div>' + nfCommon.formatValue(actionDetails.name) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">值</div>' + nfCommon.formatValue(actionDetails.value) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">之前值</div>' + nfCommon.formatValue(actionDetails.previousValue) + '</div>'));
             } else if (action.operation === 'Connect' || action.operation === 'Disconnect') {
                 detailsMarkup.append(
-                    $('<div class="action-detail"><div class="history-details-name">Source Id</div>' + nfCommon.escapeHtml(actionDetails.sourceId) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Source Name</div>' + nfCommon.formatValue(actionDetails.sourceName) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Source Type</div>' + nfCommon.escapeHtml(actionDetails.sourceType) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Relationship(s)</div>' + nfCommon.formatValue(actionDetails.relationship) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Destination Id</div>' + nfCommon.escapeHtml(actionDetails.destinationId) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Destination Name</div>' + nfCommon.formatValue(actionDetails.destinationName) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Destination Type</div>' + nfCommon.escapeHtml(actionDetails.destinationType) + '</div>'));
+                    $('<div class="action-detail"><div class="history-details-name">源 Id</div>' + nfCommon.escapeHtml(actionDetails.sourceId) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">源名称</div>' + nfCommon.formatValue(actionDetails.sourceName) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">源类型</div>' + nfCommon.escapeHtml(actionDetails.sourceType) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">关系</div>' + nfCommon.formatValue(actionDetails.relationship) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">目标 Id</div>' + nfCommon.escapeHtml(actionDetails.destinationId) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">目标 名称</div>' + nfCommon.formatValue(actionDetails.destinationName) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">目标 类型</div>' + nfCommon.escapeHtml(actionDetails.destinationType) + '</div>'));
             } else if (action.operation === 'Move') {
                 detailsMarkup.append(
-                    $('<div class="action-detail"><div class="history-details-name">Group</div>' + nfCommon.formatValue(actionDetails.group) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Group Id</div>' + nfCommon.escapeHtml(actionDetails.groupId) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Previous Group</div>' + nfCommon.formatValue(actionDetails.previousGroup) + '</div>')).append(
-                    $('<div class="action-detail"><div class="history-details-name">Previous Group Id</div>' + nfCommon.escapeHtml(actionDetails.previousGroupId) + '</div>'));
+                    $('<div class="action-detail"><div class="history-details-name">组</div>' + nfCommon.formatValue(actionDetails.group) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">组 Id</div>' + nfCommon.escapeHtml(actionDetails.groupId) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">之前组</div>' + nfCommon.formatValue(actionDetails.previousGroup) + '</div>')).append(
+                    $('<div class="action-detail"><div class="history-details-name">之前组 Id</div>' + nfCommon.escapeHtml(actionDetails.previousGroupId) + '</div>'));
             } else if (action.operation === 'Purge') {
                 detailsMarkup.append(
-                    $('<div class="action-detail"><div class="history-details-name">End Date</div>' + nfCommon.escapeHtml(actionDetails.endDate) + '</div>'));
+                    $('<div class="action-detail"><div class="history-details-name">结束日期</div>' + nfCommon.escapeHtml(actionDetails.endDate) + '</div>'));
             }
         }
 
