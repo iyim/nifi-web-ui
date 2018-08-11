@@ -372,7 +372,7 @@
         var inputColumn = {
             id: 'input',
             field: 'input',
-            name: '<span class="input-title">In</span>&nbsp;/&nbsp;<span class="input-size-title">Size</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
+            name: '<span class="input-title">入</span>&nbsp;/&nbsp;<span class="input-size-title">Size</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
             toolTip: 'Count / data size in the last 5 min',
             sortable: true,
             defaultSortAsc: false,
@@ -382,7 +382,7 @@
         var ioColumn = {
             id: 'io',
             field: 'io',
-            name: '<span class="read-title">Read</span>&nbsp;/&nbsp;<span class="written-title">Write</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
+            name: '<span class="read-title">读</span>&nbsp;/&nbsp;<span class="written-title">Write</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
             toolTip: 'Data size in the last 5 min',
             formatter: ioFormatter,
             sortable: true,
@@ -392,7 +392,7 @@
         var outputColumn = {
             id: 'output',
             field: 'output',
-            name: '<span class="output-title">Out</span>&nbsp;/&nbsp;<span class="output-size-title">Size</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
+            name: '<span class="output-title">出</span>&nbsp;/&nbsp;<span class="output-size-title">Size</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
             toolTip: 'Count / data size in the last 5 min',
             sortable: true,
             defaultSortAsc: false,
@@ -402,7 +402,7 @@
         var tasksTimeColumn = {
             id: 'tasks',
             field: 'tasks',
-            name: '<span class="tasks-title">Tasks</span>&nbsp;/&nbsp;<span class="time-title">Time</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
+            name: '<span class="tasks-title">任务</span>&nbsp;/&nbsp;<span class="time-title">Time</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
             toolTip: 'Count / duration in the last 5 min',
             formatter: taskTimeFormatter,
             sortable: true,
@@ -606,9 +606,9 @@
         // initialize the cluster processor summary dialog
         $('#cluster-processor-summary-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Cluster Processor Summary',
+            headerText: '集群处理器摘要',
             buttons: [{
-                buttonText: 'Close',
+                buttonText: '关闭',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -910,9 +910,9 @@
         // initialize the cluster connection summary dialog
         $('#cluster-connection-summary-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Cluster Connection Summary',
+            headerText: '集群连接摘要',
             buttons: [{
-                buttonText: 'Close',
+                buttonText: '关闭',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -1272,9 +1272,9 @@
         // initialize the cluster process group summary dialog
         $('#cluster-process-group-summary-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Cluster Process Group Summary',
+            headerText: '集群流程组摘要',
             buttons: [{
-                buttonText: 'Close',
+                buttonText: '关闭',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -1523,9 +1523,9 @@
         // initialize the cluster input port summary dialog
         $('#cluster-input-port-summary-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Cluster Input Port Summary',
+            headerText: '集群输入端口摘要',
             buttons: [{
-                buttonText: 'Close',
+                buttonText: '关闭',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -1770,7 +1770,7 @@
         // initialize the cluster output port summary dialog
         $('#cluster-output-port-summary-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Cluster Output Port Summary',
+            headerText: '集群输出端口摘要',
             buttons: [{
                 buttonText: 'Close',
                 color: {
@@ -2075,9 +2075,9 @@
         // initialize the cluster remote process group summary dialog
         $('#cluster-remote-process-group-summary-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Cluster Remote Process Group Summary',
+            headerText: '集群远程流程组摘要',
             buttons: [{
-                buttonText: 'Close',
+                buttonText: '关闭',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -2201,9 +2201,9 @@
         // initialize the system diagnostics dialog
         $('#system-diagnostics-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'System Diagnostics',
+            headerText: '系统诊断',
             buttons: [{
-                buttonText: 'Close',
+                buttonText: '关闭',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -2560,9 +2560,9 @@
         var storageUsageContainer = $('<div class="storage-usage"></div>').appendTo(container);
 
         var storage = $('<div class="storage-identifier setting-name"></div>');
-        storage.text('Usage:');
+        storage.text('用法:');
         if (nfCommon.isDefinedAndNotNull(storageUsage.identifier)) {
-            storage.text('Usage for ' + storageUsage.identifier + ':');
+            storage.text('用法 ' + storageUsage.identifier + ':');
         }
         storage.appendTo(storageUsageContainer);
 

@@ -18,7 +18,7 @@
 <div id="new-process-group-dialog" class="hidden small-dialog">
     <div class="dialog-content">
         <div class="setting">
-            <div class="setting-name">Process group name</div>
+            <div class="setting-name">流程组名称</div>
             <div class="setting-field">
                 <input id="new-process-group-name" type="text"/>
             </div>
@@ -26,7 +26,7 @@
         <div class="setting">
             <span id="import-process-group-link" class="link" title="Import a flow from a registry">
                 <i class="fa fa-cloud-download" aria-hidden="true" style="margin-left: 5px; margin-right: 5px;"></i>
-                Import...
+                导入...
             </span>
         </div>
     </div>

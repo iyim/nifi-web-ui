@@ -16,13 +16,13 @@
 <div id="user-policies-dialog" class="hidden large-dialog">
     <div class="dialog-content">
         <div class="setting">
-            <div class="setting-name">User</div>
+            <div class="setting-name">用户</div>
             <div class="setting-field">
                 <div id="policies-dialog-user-name"></div>
             </div>
         </div>
         <div id="user-policy-message" title="Some policies may be inherited by descendant components unless explicitly overridden.">
-            Some policies may be inherited by descendant components unless explicitly overridden.
+            除非明确覆盖，否则某些策略可能由后代组件继承.
         </div>
         <div id="user-policies-table"></div>
     </div>

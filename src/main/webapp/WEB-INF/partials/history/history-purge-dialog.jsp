@@ -20,7 +20,7 @@
         <div class="setting" style="margin-bottom: 0px;">
             <div class="end-date-setting">
                 <div class="setting-name">
-                    End date
+                    结束日期
                     <div class="fa fa-question-circle" alt="Info" title="The purge end date in the format 'mm/dd/yyyy'. Must also specify end time."></div>
                 </div>
                 <div class="setting-field">
@@ -29,7 +29,7 @@
             </div>
             <div class="end-time-setting">
                 <div class="setting-name">
-                    End time (<span class="timezone"></span>)
+                    结束时间 (<span class="timezone"></span>)
                     <div class="fa fa-question-circle" id="purge-end-time-info" alt="Info" title="The end time in the format 'hh:mm:ss'. Must also specify end date."></div>
                 </div>
                 <div class="setting-field">

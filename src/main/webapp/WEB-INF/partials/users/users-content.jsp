@@ -17,11 +17,11 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <div id="users">
     <div id="users-header-and-filter">
-        <div id="users-header-text">NiFi Users</div>
+        <div id="users-header-text">NiFi 用户</div>
     </div>
     <div id="users-filter-controls">
         <div id="users-filter-status" class="filter-status">
-            Displaying&nbsp;<span id="displayed-users"></span>&nbsp;of&nbsp;<span id="total-users"></span>
+            展示&nbsp;<span id="displayed-users"></span>&nbsp;的&nbsp;<span id="total-users"></span>
         </div>
         <div id="users-filter-container">
             <input type="text" placeholder="Filter" id="users-filter" class="filter"/>
@@ -35,7 +35,7 @@
 <div id="users-refresh-container">
     <button id="user-refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
     <div id="users-last-refreshed-container" class="last-refreshed-container">
-        Last updated:&nbsp;<span id="users-last-refreshed" class="value-color"></span>
+        上次更新:&nbsp;<span id="users-last-refreshed" class="value-color"></span>
     </div>
     <div id="users-loading-container" class="loading-container"></div>
 </div>

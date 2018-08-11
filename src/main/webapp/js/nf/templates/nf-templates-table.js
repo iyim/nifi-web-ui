@@ -220,8 +220,8 @@
             }
         }).fail(function () {
             nfDialog.showOkDialog({
-                headerText: 'Download Template',
-                dialogContent: 'Unable to generate access token for downloading content.'
+                headerText: '下载模板',
+                dialogContent: '无法生成用于下载内容的访问令牌.'
             });
         });
     };

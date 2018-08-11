@@ -136,7 +136,7 @@
                 }, function () {
                     $(this).css('background', '#728E9B');
                 }).on('click', scope.save);
-            var cancel = $('<div class="secondary-button">Cancel</div>').css({
+            var cancel = $('<div class="secondary-button">取消</div>').css({
                 'color': '#004849',
                 'background': '#E3E8EB'
             }).hover(
@@ -382,7 +382,7 @@
                 if (value === '') {
                     return '<span class="table-cell blank">Empty string set</span>';
                 } else if (value === null) {
-                    return '<span class="unset">No value set</span>';
+                    return '<span class="unset">没有设值</span>';
                 } else {
                     return nfCommon.escapeHtml(value);
                 }
@@ -633,8 +633,8 @@
                 } else {
                     // see if those changes should be saved
                     nfDialog.showYesNoDialog({
-                        headerText: 'Variables',
-                        dialogContent: 'Save changes before leaving variable configuration?',
+                        headerText: '变量',
+                        dialogContent: '在离开变量配置之前保存更改?',
                         noHandler: function () {
                             close();
                             deferred.resolve();
@@ -822,9 +822,9 @@
 
         // affected component will be undefined when a new variable is added
         if (nfCommon.isUndefined(affectedComponents)) {
-            $('<li class="affected-component-container"><span class="unset">Pending Apply</span></li>').appendTo(processorContainer);
-            $('<li class="affected-component-container"><span class="unset">Pending Apply</span></li>').appendTo(controllerServiceContainer);
-            $('<li class="affected-component-container"><span class="unset">Pending Apply</span></li>').appendTo(unauthorizedComponentsContainer);
+            $('<li class="affected-component-container"><span class="unset">应用等待</span></li>').appendTo(processorContainer);
+            $('<li class="affected-component-container"><span class="unset">应用等待</span></li>').appendTo(controllerServiceContainer);
+            $('<li class="affected-component-container"><span class="unset">应用等待</span></li>').appendTo(unauthorizedComponentsContainer);
         } else {
             var referencingComponentsForBulletinRetrieval = [];
 
@@ -849,7 +849,7 @@
             });
 
             if (affectedProcessors.length === 0) {
-                $('<li class="affected-component-container"><span class="unset">None</span></li>').appendTo(processorContainer);
+                $('<li class="affected-component-container"><span class="unset">无</span></li>').appendTo(processorContainer);
             } else {
                 // sort the affected processors
                 affectedProcessors.sort(nameComparator);
@@ -861,7 +861,7 @@
             }
 
             if (affectedControllerServices.length === 0) {
-                $('<li class="affected-component-container"><span class="unset">None</span></li>').appendTo(controllerServiceContainer);
+                $('<li class="affected-component-container"><span class="unset">无</span></li>').appendTo(controllerServiceContainer);
             } else {
                 // sort the affected controller services
                 affectedControllerServices.sort(nameComparator);
@@ -873,7 +873,7 @@
             }
 
             if (unauthorizedAffectedComponents.length === 0) {
-                $('<li class="affected-component-container"><span class="unset">None</span></li>').appendTo(unauthorizedComponentsContainer);
+                $('<li class="affected-component-container"><span class="unset">无</span></li>').appendTo(unauthorizedComponentsContainer);
             } else {
                 // sort the unauthorized affected components
                 unauthorizedAffectedComponents.sort(function (a, b) {
@@ -1144,12 +1144,12 @@
                 var unauthorizedComponentsContainer = $('#variable-registry-affected-unauthorized-components').empty();
 
                 // indicate no affected components
-                $('<li class="affected-component-container"><span class="unset">None</span></li>').appendTo(processorContainer);
-                $('<li class="affected-component-container"><span class="unset">None</span></li>').appendTo(controllerServiceContainer);
-                $('<li class="affected-component-container"><span class="unset">None</span></li>').appendTo(unauthorizedComponentsContainer);
+                $('<li class="affected-component-container"><span class="unset">无</span></li>').appendTo(processorContainer);
+                $('<li class="affected-component-container"><span class="unset">无</span></li>').appendTo(controllerServiceContainer);
+                $('<li class="affected-component-container"><span class="unset">无</span></li>').appendTo(unauthorizedComponentsContainer);
 
                 // update the selection context
-                $('#affected-components-context').addClass('unset').text('None');
+                $('#affected-components-context').addClass('unset').text('无');
             } else {
                 // select the desired row
                 variableGrid.setSelectedRows([index]);
@@ -1210,7 +1210,7 @@
             // updates the button model to show the close button
             var updateToCloseButtonModel = function () {
                 $('#variable-registry-dialog').modal('setButtonModel', [{
-                    buttonText: 'Close',
+                    buttonText: '关闭',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -1229,7 +1229,7 @@
 
             // update the button model to show the cancel button
             $('#variable-registry-dialog').modal('setButtonModel', [{
-                buttonText: 'Cancel',
+                buttonText: '取消',
                 color: {
                     base: '#E3E8EB',
                     hover: '#C7D2D7',
@@ -1278,8 +1278,8 @@
                         if (updateRequest.complete === true) {
                             if (errored) {
                                 nfDialog.showOkDialog({
-                                    headerText: 'Variable Update Error',
-                                    dialogContent: 'Unable to complete variable update request: ' + nfCommon.escapeHtml(updateRequest.failureReason)
+                                    headerText: '变量更新出错',
+                                    dialogContent: '无法完成变量更新请求: ' + nfCommon.escapeHtml(updateRequest.failureReason)
                                 });
                             }
 
@@ -1493,8 +1493,8 @@
                     variableGrid.editActiveCell();
                 } else {
                     nfDialog.showOkDialog({
-                        headerText: 'Variable Exists',
-                        dialogContent: 'A variable with this name already exists.'
+                        headerText: '变量存在',
+                        dialogContent: '已存在具有此名称的变量.'
                     });
 
                     // select the existing properties row
@@ -1505,8 +1505,8 @@
             }
         } else {
             nfDialog.showOkDialog({
-                headerText: 'Variable Name',
-                dialogContent: 'Variable name must be specified.'
+                headerText: '变量名称',
+                dialogContent: '必须制定变量名称.'
             });
         }
 
@@ -1559,7 +1559,7 @@
         init: function () {
             $('#variable-registry-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Variables',
+                headerText: '变量',
                 handler: {
                     close: function () {
                         resetDialog();
@@ -1574,7 +1574,7 @@
             });
 
             $('#new-variable-dialog').modal({
-                headerText: 'New Variable',
+                headerText: '新变量',
                 buttons: [{
                     buttonText: 'Ok',
                     color: {
@@ -1624,7 +1624,7 @@
         showVariables: function (processGroupId) {
             // restore the button model
             $('#variable-registry-dialog').modal('setButtonModel', [{
-                buttonText: 'Apply',
+                buttonText: '应用',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -1636,7 +1636,7 @@
                     }
                 }
             }, {
-                buttonText: 'Cancel',
+                buttonText: '取消',
                 color: {
                     base: '#E3E8EB',
                     hover: '#C7D2D7',

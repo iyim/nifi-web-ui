@@ -19,7 +19,7 @@
     <div class="dialog-content">
         <div class="settings-left">
             <div id="disable-controller-service-service-container" class="setting">
-                <div class="setting-name">Service</div>
+                <div class="setting-name">服务</div>
                 <div class="setting-field">
                     <span id="disable-controller-service-id" class="hidden"></span>
                     <div id="disable-controller-service-name"></div>
@@ -28,9 +28,9 @@
                 </div>
             </div>
             <div id="disable-controller-service-scope-container" class="setting">
-                <div class="setting-name">Scope</div>
+                <div class="setting-name">范围</div>
                 <div class="setting-field">
-                    Service and referencing components
+                    服务和引用组件
                     <div class="fa fa-question-circle" alt="Info" title="Referencing components must be disabled/stopped in order to disable this service."></div>
                 </div>
             </div>
@@ -39,17 +39,17 @@
                 <div class="setting-field">
                     <ol id="disable-controller-service-progress">
                         <li>
-                            Stopping referencing processors and reporting tasks
+                            停止相关处理器和报告任务
                             <div id="disable-referencing-schedulable" class="disable-referencing-components"></div>
                             <div class="clear"></div>
                         </li>
                         <li>
-                            Disabling referencing controller services
+                            禁用相关控制器服务
                             <div id="disable-referencing-services" class="disable-referencing-components"></div>
                             <div class="clear"></div>
                         </li>
                         <li>
-                            Disabling this controller service
+                            禁用此控制器服务
                             <div id="disable-controller-service" class="disable-referencing-components"></div>
                             <div class="clear"></div>
                         </li>
@@ -61,7 +61,7 @@
         <div class="settings-right">
             <div class="setting">
                 <div class="setting-name">
-                    Referencing Components
+                    相关组件
                     <div class="fa fa-question-circle" alt="Info" title="Other components referencing this controller service."></div>
                 </div>
                 <div class="setting-field">
@@ -71,6 +71,6 @@
         </div>
     </div>
     <div class="controller-service-canceling hidden unset">
-        Canceling...
+        取消中...
     </div>
 </div>

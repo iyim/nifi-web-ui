@@ -18,12 +18,12 @@
 <div id="revert-local-changes-dialog" layout="column" class="hidden large-dialog">
     <div class="dialog-content">
         <div class="setting local-changes-message">
-            <span id="revert-local-changes-message"></span>&nbsp;<span style="font-weight: bold;">Revert will remove all changes.</span>
+            <span id="revert-local-changes-message"></span>&nbsp;<span style="font-weight: bold;">还原将删除所有更改.</span>
         </div>
         <span id="revert-local-changes-process-group-id" class="hidden"></span>
         <div id="revert-local-changes-filter-controls">
             <div id="revert-local-changes-filter-status" class="filter-status">
-                Displaying&nbsp;<span id="displayed-revert-local-changes-entries"></span>&nbsp;of&nbsp;<span id="total-revert-local-changes-entries"></span>
+                展示&nbsp;<span id="displayed-revert-local-changes-entries"></span>&nbsp;的&nbsp;<span id="total-revert-local-changes-entries"></span>
             </div>
             <div id="revert-local-changes-filter-container">
                 <input type="text" id="revert-local-changes-filter" placeholder="Filter"/>

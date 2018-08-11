@@ -19,7 +19,7 @@
     <div class="dialog-content">
         <div id="select-template-container">
             <div id="template-browse-container">
-                <span id="select-template-label">Select Template</span>
+                <span id="select-template-label">选择模板</span>
                 <div id="select-template-button">
                     <button class="fa fa-search" id="template-file-field-button" title="Browse"></button>
                     <form id="template-upload-form" enctype="multipart/form-data" method="post">

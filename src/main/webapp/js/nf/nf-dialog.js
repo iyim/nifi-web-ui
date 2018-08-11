@@ -173,8 +173,8 @@
          */
         showConnectedToClusterMessage: function (okHandler) {
             nfDialog.showOkDialog({
-                headerText: 'Cluster Connection',
-                dialogContent: 'This node just joined the cluster. Any modifications to the data flow made here will replicate across the cluster.',
+                headerText: '集群连接',
+                dialogContent: '此节点刚刚加入集群。对此处所做的任何数据流修改都将在集群中进行复制.',
                 okHandler: function () {
                     if (typeof okHandler === 'function') {
                         okHandler.call(this);

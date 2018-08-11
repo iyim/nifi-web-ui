@@ -79,7 +79,7 @@
         // configure the drop request status dialog
         $('#listing-request-status-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Queue Listing',
+            headerText: '队列清单',
             handler: {
                 close: function () {
                     // clear the current button model
@@ -118,8 +118,8 @@
             }
         }).fail(function () {
             nfDialog.showOkDialog({
-                headerText: 'Queue Listing',
-                dialogContent: 'Unable to generate access token for downloading content.'
+                headerText: '队列清单',
+                dialogContent: '无法生成用于下载内容的访问令牌.'
             });
         });
     };
@@ -150,8 +150,8 @@
                     deferred.resolve(uiExtensionToken, downloadToken);
                 }).fail(function () {
                     nfDialog.showOkDialog({
-                        headerText: 'Queue Listing',
-                        dialogContent: 'Unable to generate access token for viewing content.'
+                        headerText: '队列清单',
+                        dialogContent: '无法生成用于查看内容的访问令牌.'
                     });
                     deferred.reject();
                 });
@@ -233,8 +233,8 @@
 
             // update the button model of the drop request status dialog
             $('#listing-request-status-dialog').modal('setButtonModel', [{
-                headerText: 'Queue Listing',
-                buttonText: 'Stop',
+                headerText: '队列清单',
+                buttonText: '停止',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -277,8 +277,8 @@
 
                             // show the dialog
                             nfDialog.showOkDialog({
-                                headerText: 'Queue Listing',
-                                dialogContent: 'The queue has no FlowFiles.'
+                                headerText: '队列清单',
+                                dialogContent: '队列没有FlowFiles.'
                             });
                         }
                     } else {
@@ -294,11 +294,11 @@
                         var queueListingMessage = $('#queue-listing-message');
                         if (listingRequest.sourceRunning === true || listingRequest.destinationRunning === true) {
                             if (listingRequest.souceRunning === true && listingRequest.destinationRunning === true) {
-                                queueListingMessage.text('The source and destination of this queue are currently running. This listing may no longer be accurate.').show();
+                                queueListingMessage.text('此队列的源和目标当前正在运行。此清单信息可能不再准确.').show();
                             } else if (listingRequest.sourceRunning === true) {
-                                queueListingMessage.text('The source of this queue is currently running. This listing may no longer be accurate.').show();
+                                queueListingMessage.text('此队列的源当前正在运行。此清单信息可能不再准确.').show();
                             } else if (listingRequest.destinationRunning === true) {
-                                queueListingMessage.text('The destination of this queue is currently running. This listing may no longer be accurate.').show();
+                                queueListingMessage.text('此队列的目标当前正在运行。此清单信息可能不再准确.').show();
                             }
                         } else {
                             queueListingMessage.text('').hide();
@@ -398,7 +398,7 @@
             if (nfCommon.isDefinedAndNotNull(value)) {
                 element.removeClass('unset').text(value);
             } else {
-                element.addClass('unset').text('No value set');
+                element.addClass('unset').text('没有设值');
             }
         };
 
@@ -720,7 +720,7 @@
 
             $('#flowfile-details-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'FlowFile',
+                headerText: '流文件',
                 buttons: [{
                     buttonText: 'Ok',
                     color: {

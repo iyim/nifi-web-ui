@@ -41,7 +41,7 @@
     return {
         init: function () {
             $('#remote-process-group-details').modal({
-                headerText: 'Remote Process Group Details',
+                headerText: '远程流程组详细信息',
                 scrollableContentStyle: 'scrollable',
                 buttons: [{
                     buttonText: 'Ok',

@@ -28,7 +28,7 @@
                 <div id="general-settings">
                     <div class="setting">
                         <div class="setting-name">
-                            Maximum timer driven thread count
+                            最大定时器驱动的线程数
                             <div class="fa fa-question-circle" alt="Info" title="The maximum number of threads for timer driven processors available to the system."></div>
                         </div>
                         <div class="editable setting-field">
@@ -40,7 +40,7 @@
                     </div>
                     <div class="setting">
                         <div class="setting-name">
-                            Maximum event driven thread count
+                            最大事件驱动的线程数
                             <div class="fa fa-question-circle" alt="Info" title="The maximum number of threads for event driven processors available to the system."></div>
                         </div>
                         <div class="editable setting-field">
@@ -70,10 +70,10 @@
     <div id="settings-refresh-container">
         <button id="settings-refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
         <div id="settings-last-refreshed-container" class="last-refreshed-container">
-            Last updated:&nbsp;<span id="settings-last-refreshed" class="value-color"></span>
+            上次更新:&nbsp;<span id="settings-last-refreshed" class="value-color"></span>
         </div>
         <div id="settings-loading-container" class="loading-container"></div>
-        <div id="controller-cs-availability" class="hidden">Listed services are available to all Reporting Tasks and services defined in the Controller Settings.</div>
+        <div id="controller-cs-availability" class="hidden">列出的服务可用于“控制器设置”中定义的所有报告任务和服务.</div>
         <div class="clear"></div>
     </div>
 </div>

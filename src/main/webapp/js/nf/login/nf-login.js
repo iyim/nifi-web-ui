@@ -86,7 +86,7 @@
         $('#username, #password').blur();
 
         // show the logging message...
-        $('#login-progress-label').text('Logging in...');
+        $('#login-progress-label').text('登录中...');
         $('#login-progress-container').show();
         $('#login-submission-container').hide();
 
@@ -145,7 +145,7 @@
             });
         }).fail(function (xhr, status, error) {
             nfDialog.showOkDialog({
-                headerText: 'Login',
+                headerText: '登录',
                 dialogContent: nfCommon.escapeHtml(xhr.responseText)
             });
 
@@ -214,14 +214,14 @@
                     showMessage = true;
                     needsLogin = false;
 
-                    $('#login-message-title').text('Success');
+                    $('#login-message-title').text('成功');
                     $('#login-message').text(accessStatus.message);
                 }
 
                 // if login is required, verify its supported
                 if (accessConfig.supportsLogin === false && needsLogin === true) {
-                    $('#login-message-title').text('Access Denied');
-                    $('#login-message').text('This NiFi is not configured to support username/password logins.');
+                    $('#login-message-title').text('拒绝访问');
+                    $('#login-message').text('此NiFi未配置为支持用户名/密码登录.');
                     showMessage = true;
                     needsLogin = false;
                 }

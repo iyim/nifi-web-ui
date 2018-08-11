@@ -81,7 +81,7 @@
         var strategies = [{
             text: 'Timer driven',
             value: 'TIMER_DRIVEN',
-            description: 'Processor will be scheduled to run on an interval defined by the run schedule.'
+            description: '处理器将安排在运行计划定义的时间间隔内运行.'
         }];
 
         // conditionally support event driven based on processor
@@ -89,14 +89,14 @@
             strategies.push({
                 text: 'Event driven',
                 value: 'EVENT_DRIVEN',
-                description: 'Processor will be scheduled to run when triggered by an event (e.g. a FlowFile enters an incoming queue). This scheduling strategy is experimental.'
+                description: '处理器将被调度为在事件触发时运行（例如，FlowFile进入传入队列）。这种调度策略是实验性的.'
             });
         } else if (processor.config['schedulingStrategy'] === 'EVENT_DRIVEN') {
             // the processor was once configured for event driven but no longer supports it
             strategies.push({
                 text: 'Event driven',
                 value: 'EVENT_DRIVEN',
-                description: 'Processor will be scheduled to run when triggered by an event (e.g. a FlowFile enters an incoming queue). This scheduling strategy is experimental.',
+                description: '处理器将被调度为在事件触发时运行（例如，FlowFile进入传入队列）。这种调度策略是实验性的.',
                 disabled: true
             });
         }
@@ -106,7 +106,7 @@
             strategies.push({
                 text: 'On primary node',
                 value: 'PRIMARY_NODE_ONLY',
-                description: 'Processor will be scheduled on the primary node on an interval defined by the run schedule. This option has been deprecated, please use the Execution setting below.',
+                description: '将按照运行计划定义的时间间隔在主节点上调度处理器。此选项已被弃用，请使用下面的“执行”设置.',
                 disabled: true
             });
         }
@@ -115,7 +115,7 @@
         strategies.push({
             text: 'CRON driven',
             value: 'CRON_DRIVEN',
-            description: 'Processor will be scheduled to run on at specific times based on the specified CRON string.'
+            description: '处理器将根据指定的CRON字符串安排在特定时间运行.'
         });
 
         return strategies;
@@ -131,12 +131,12 @@
         return [{
             text: 'All nodes',
             value: 'ALL',
-            description: 'Processor will be scheduled to run on all nodes',
+            description: '处理器将安排在所有节点上运行',
             disabled: processor.executionNodeRestricted === true
         }, {
             text: 'Primary node',
             value: 'PRIMARY',
-            description: 'Processor will be scheduled to run only on the primary node'
+            description: '处理器将被安排为仅在主节点上运行'
         }];
     };
 
@@ -160,7 +160,7 @@
 
             nfDialog.showOkDialog({
                 dialogContent: content,
-                headerText: 'Processor Configuration'
+                headerText: '处理器配置'
             });
         } else {
             nfErrorHandler.handleAjaxError(xhr, status, error);
@@ -426,7 +426,7 @@
         if (errors.length > 0) {
             nfDialog.showOkDialog({
                 dialogContent: nfCommon.formatUnorderedList(errors),
-                headerText: 'Processor Configuration'
+                headerText: '处理器配置'
             });
             return false;
         } else {
@@ -462,8 +462,8 @@
             if (isSaveRequired()) {
                 // see if those changes should be saved
                 nfDialog.showYesNoDialog({
-                    headerText: 'Processor Configuration',
-                    dialogContent: 'Save changes before going to this Controller Service?',
+                    headerText: '处理器配置',
+                    dialogContent: '在转到此Controller Service之前保存更改?',
                     noHandler: function () {
                         deferred.resolve();
                     },
@@ -562,7 +562,7 @@
             // initialize the processor configuration dialog
             $('#processor-configuration').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Configure Processor',
+                headerText: '配置处理器',
                 handler: {
                     close: function () {
                         // empty the relationship list
@@ -790,11 +790,11 @@
                             createRelationshipOption(relationship);
                         });
                     } else {
-                        $('#auto-terminate-relationship-names').append('<div class="unset">This processor has no relationships.</div>');
+                        $('#auto-terminate-relationship-names').append('<div class="unset">此处理器没有任何关系.</div>');
                     }
 
                     var buttons = [{
-                        buttonText: 'Apply',
+                        buttonText: '应用',
                         color: {
                             base: '#728E9B',
                             hover: '#004849',
@@ -820,7 +820,7 @@
                         }
                     },
                         {
-                            buttonText: 'Cancel',
+                            buttonText: '取消',
                             color: {
                                 base: '#E3E8EB',
                                 hover: '#C7D2D7',
@@ -836,7 +836,7 @@
                     // determine if we should show the advanced button
                     if (nfCommon.isDefinedAndNotNull(processor.config.customUiUrl) && processor.config.customUiUrl !== '') {
                         buttons.push({
-                            buttonText: 'Advanced',
+                            buttonText: '高级',
                             clazz: 'fa fa-cog button-icon',
                             color: {
                                 base: '#E3E8EB',
@@ -866,8 +866,8 @@
                                     if (isSaveRequired()) {
                                         // see if those changes should be saved
                                         nfDialog.showYesNoDialog({
-                                            headerText: 'Save',
-                                            dialogContent: 'Save changes before opening the advanced configuration?',
+                                            headerText: '保存',
+                                            dialogContent: '在打开高级配置之前保存更改?',
                                             noHandler: openCustomUi,
                                             yesHandler: function () {
                                                 saveProcessor(processor).done(function (deferred) {

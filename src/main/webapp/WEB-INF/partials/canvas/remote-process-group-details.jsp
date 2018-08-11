@@ -18,7 +18,7 @@
 <div id="remote-process-group-details" class="hidden medium-dialog">
     <div class="dialog-content">
         <div class="setting">
-            <div class="setting-name">Name</div>
+            <div class="setting-name">名称</div>
             <div class="setting-field">
                 <span id="read-only-remote-process-group-name"></span>
             </div>
@@ -38,7 +38,7 @@
         <div class="setting">
             <div class="remote-process-group-setting-left">
                 <div class="setting-name">
-                    Transport Protocol
+                    传输协议
                     <div class="fa fa-question-circle" alt="Info" title="Transport protocol to use for this Remote Process Group communication."></div>
                 </div>
                 <div class="setting-field">
@@ -47,7 +47,7 @@
             </div>
             <div class="remote-process-group-setting-right">
                 <div class="setting-name">
-                    Local Network Interface
+                    本地网络接口
                     <div class="fa fa-question-circle" alt="Info" title="The local network interface to send/receive data. If not specified, any local address is used. If clustered, all nodes must have an interface with this identifier."></div>
                 </div>
                 <div class="setting-field">
@@ -59,7 +59,7 @@
         <div class="setting">
             <div class="remote-process-group-setting-left">
                 <div class="setting-name">
-                    HTTP Proxy server hostname
+                    HTTP代理服务器主机名
                     <div class="fa fa-question-circle" alt="Info" title="Specify the proxy server's hostname to use. If not specified, HTTP traffics are sent directly to the target NiFi instance."></div>
                 </div>
                 <div class="setting-field">
@@ -68,7 +68,7 @@
             </div>
             <div class="remote-process-group-setting-right">
                 <div class="setting-name">
-                    HTTP Proxy server port
+                    HTTP代理服务器端口
                     <div class="fa fa-question-circle" alt="Info" title="Specify the proxy server's port number, optional. If not specified, default port 80 will be used."></div>
                 </div>
                 <div class="setting-field">
@@ -80,7 +80,7 @@
         <div class="setting">
             <div class="remote-process-group-setting-left">
                 <div class="setting-name">
-                    HTTP Proxy user
+                    HTTP代理用户名
                     <div class="fa fa-question-circle" alt="Info" title="Specify an user name to connect to the proxy server, optional."></div>
                 </div>
                 <div class="setting-field">
@@ -89,7 +89,7 @@
             </div>
             <div class="remote-process-group-setting-right">
                 <div class="setting-name">
-                    HTTP Proxy password
+                    HTTP代理密码
                     <div class="fa fa-question-circle" alt="Info" title="Specify an user password to connect to the proxy server, optional."></div>
                 </div>
                 <div class="setting-field">
@@ -101,7 +101,7 @@
         <div class="setting">
             <div class="remote-process-group-setting-left">
                 <div class="setting-name">
-                    Communications timeout
+                    通信超时
                     <div class="fa fa-question-circle" alt="Info" title="When communication with this remote process group takes longer than this amount of time, it will timeout."></div>
                 </div>
                 <div class="setting-field">
@@ -110,7 +110,7 @@
             </div>
             <div class="remote-process-group-setting-right">
                 <div class="setting-name">
-                    Yield duration
+                    让出持续时间
                     <div class="fa fa-question-circle" alt="Info" title="When communication with this remote process group fails, it will not be scheduled again until this amount of time elapses."></div>
                 </div>
                 <div class="setting-field">

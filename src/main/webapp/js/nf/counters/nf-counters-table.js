@@ -138,8 +138,8 @@
     var resetCounter = function (item) {
         // prompt reset confirmation
         nfDialog.showYesNoDialog({
-            headerText: 'Reset Counter',
-            dialogContent: 'Reset counter \'' + nfCommon.escapeHtml(item.name) + '\' to default value?',
+            headerText: '重置计数器',
+            dialogContent: '重置计数器 \'' + nfCommon.escapeHtml(item.name) + '\' 到默认值?',
             yesHandler: function () {
                 $.ajax({
                     type: 'PUT',

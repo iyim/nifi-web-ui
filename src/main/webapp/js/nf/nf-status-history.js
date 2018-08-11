@@ -169,8 +169,8 @@
     var insufficientHistory = function () {
         // notify the user
         nfDialog.showOkDialog({
-            headerText: 'Status History',
-            dialogContent: 'Insufficient history, please try again later.'
+            headerText: '状态历史',
+            dialogContent: '历史不足，请稍后再试.'
         });
     };
 
@@ -1033,9 +1033,9 @@
             // configure the dialog and make it draggable
             $('#status-history-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: "Status History",
+                headerText: "状态历史",
                 buttons: [{
-                    buttonText: 'Close',
+                    buttonText: '关闭',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',

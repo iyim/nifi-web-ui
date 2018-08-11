@@ -24,39 +24,39 @@
                 <span id="flowfile-cluster-node-id" class="hidden"></span>
                 <div class="settings-left">
                     <div id="flowfile-details">
-                        <div class="flowfile-header">FlowFile Details</div>
+                        <div class="flowfile-header">FlowFile 详情</div>
                         <div class="flowfile-detail">
                             <div class="detail-name">UUID</div>
                             <div id="flowfile-uuid" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="flowfile-detail">
-                            <div class="detail-name">Filename</div>
+                            <div class="detail-name">文件名</div>
                             <div id="flowfile-filename" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="flowfile-detail">
-                            <div class="detail-name">File Size</div>
+                            <div class="detail-name">文件大小</div>
                             <div id="flowfile-file-size" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="flowfile-detail">
-                            <div class="detail-name">Queue Position</div>
+                            <div class="detail-name">队列位置</div>
                             <div id="flowfile-queue-position" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="flowfile-detail">
-                            <div class="detail-name">Queued Duration</div>
+                            <div class="detail-name">排队持续时间</div>
                             <div id="flowfile-queued-duration" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="flowfile-detail">
-                            <div class="detail-name">Lineage Duration</div>
+                            <div class="detail-name">谱系持续时间</div>
                             <div id="flowfile-lineage-duration" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="flowfile-detail">
-                            <div class="detail-name">Penalized</div>
+                            <div class="detail-name">受罚</div>
                             <div id="flowfile-penalized" class="detail-value"></div>
                             <div class="clear"></div>
                         </div>
@@ -66,33 +66,33 @@
                 <div class="spacer">&nbsp;</div>
                 <div class="settings-right">
                     <div id="flowfile-with-no-content" class="content-details">
-                        <div class="flowfile-header">Content Claim</div>
-                        <div class="flowfile-info unset">No Content Available</div>
+                        <div class="flowfile-header">内容声明</div>
+                        <div class="flowfile-info unset">没有可用的内容</div>
                     </div>
                     <div id="flowfile-content-details" class="content-details">
-                        <div class="flowfile-header">Content Claim</div>
+                        <div class="flowfile-header">内容声明</div>
                         <div class="flowfile-detail">
-                            <div class="content-detail-name">Container</div>
+                            <div class="content-detail-name">容器</div>
                             <div id="content-container" class="content-detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="flowfile-detail">
-                            <div class="content-detail-name">Section</div>
+                            <div class="content-detail-name">部分</div>
                             <div id="content-section" class="content-detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="flowfile-detail">
-                            <div class="content-detail-name">Identifier</div>
+                            <div class="content-detail-name">指示器</div>
                             <div id="content-identifier" class="content-detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="flowfile-detail">
-                            <div class="content-detail-name">Offset</div>
+                            <div class="content-detail-name">偏移</div>
                             <div id="content-offset" class="content-detail-value"></div>
                             <div class="clear"></div>
                         </div>
                         <div class="flowfile-detail">
-                            <div class="content-detail-name">Size</div>
+                            <div class="content-detail-name">大小</div>
                             <div id="content-size" class="content-detail-value"></div>
                             <div id="content-bytes" class="content-detail-value hidden"></div>
                             <div class="clear"></div>
@@ -108,7 +108,7 @@
             </div>
             <div id="flowfile-attributes-tab-content" class="details-tab">
                 <div id="flowfile-attributes-details">
-                    <div id="flowfile-attributes-header" class="flowfile-header">Attribute Values</div>
+                    <div id="flowfile-attributes-header" class="flowfile-header">属性值</div>
                     <div class="clear"></div>
                     <div id="flowfile-attributes-container"></div>
                 </div>

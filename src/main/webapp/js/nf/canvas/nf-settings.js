@@ -136,8 +136,8 @@
         }).done(function (response) {
             // close the settings dialog
             nfDialog.showOkDialog({
-                headerText: 'Settings',
-                dialogContent: 'Settings successfully applied.'
+                headerText: '设置',
+                dialogContent: '设置已成功应用.'
             });
 
             // register the click listener for the save button
@@ -640,7 +640,7 @@
                     if (nfCommon.isBlank(reportingTaskType.description)) {
                         $('#reporting-task-type-description')
                             .attr('title', '')
-                            .html('<span class="unset">No description specified</span>');
+                            .html('<span class="unset">没有指定说明</span>');
                     } else {
                         $('#reporting-task-type-description')
                             .width($('#reporting-task-description-container').innerWidth() - 1)
@@ -701,9 +701,9 @@
                     var restrictionTip = $('<div></div>');
 
                     if (nfCommon.isBlank(item.usageRestriction)) {
-                        restrictionTip.append($('<p style="margin-bottom: 3px;"></p>').text('Requires the following permissions:'));
+                        restrictionTip.append($('<p style="margin-bottom: 3px;"></p>').text('需要以下权限:'));
                     } else {
-                        restrictionTip.append($('<p style="margin-bottom: 3px;"></p>').text(item.usageRestriction + ' Requires the following permissions:'));
+                        restrictionTip.append($('<p style="margin-bottom: 3px;"></p>').text(item.usageRestriction + ' 需要以下权限:'));
                     }
 
                     var restrictions = [];
@@ -713,7 +713,7 @@
                             restrictions.push("'" + requiredPermission.label + "' - " + nfCommon.escapeHtml(explicitRestriction.explanation));
                         });
                     } else {
-                        restrictions.push('Access to restricted components regardless of restrictions.');
+                        restrictions.push('无论有何限制，都可以访问受限组件.');
                     }
                     restrictionTip.append(nfCommon.formatUnorderedList(restrictions));
 
@@ -885,9 +885,9 @@
         // initialize the reporting task dialog
         $('#new-reporting-task-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Add Reporting Task',
+            headerText: '添加报告任务',
             buttons: [{
-                buttonText: 'Add',
+                buttonText: '添加',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -911,7 +911,7 @@
                 }
             },
                 {
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
@@ -1435,8 +1435,8 @@
         $('#registry-description').val(registryEntity.component.description);
 
         // show the dialog
-        $('#registry-configuration-dialog').modal('setHeaderText', 'Edit Registry Client').modal('setButtonModel', [{
-            buttonText: 'Update',
+        $('#registry-configuration-dialog').modal('setHeaderText', '编辑注册客户端').modal('setButtonModel', [{
+            buttonText: '更新',
             color: {
                 base: '#728E9B',
                 hover: '#004849',
@@ -1448,7 +1448,7 @@
                 }
             }
         }, {
-            buttonText: 'Cancel',
+            buttonText: '取消',
             color: {
                 base: '#E3E8EB',
                 hover: '#C7D2D7',
@@ -1470,8 +1470,8 @@
     var promptToRemoveRegistry = function (registryEntity) {
         // prompt for deletion
         nfDialog.showYesNoDialog({
-            headerText: 'Delete Registry',
-            dialogContent: 'Delete registry \'' + nfCommon.escapeHtml(registryEntity.component.name) + '\'?',
+            headerText: '删除注册表',
+            dialogContent: '删除注册表 \'' + nfCommon.escapeHtml(registryEntity.component.name) + '\'?',
             yesHandler: function () {
                 removeRegistry(registryEntity);
             }
@@ -1506,8 +1506,8 @@
      */
     var loadSettings = function () {
         var setUnauthorizedText = function () {
-            $('#read-only-maximum-timer-driven-thread-count-field').addClass('unset').text('Unauthorized');
-            $('#read-only-maximum-event-driven-thread-count-field').addClass('unset').text('Unauthorized');
+            $('#read-only-maximum-timer-driven-thread-count-field').addClass('unset').text('未授权');
+            $('#read-only-maximum-event-driven-thread-count-field').addClass('unset').text('未授权');
         };
 
         var setEditable = function (editable) {
@@ -1762,8 +1762,8 @@
                     // set the initial focus
                     $('#reporting-task-type-filter').focus();
                 } else if (selectedTab === 'Registry Clients') {
-                    $('#registry-configuration-dialog').modal('setHeaderText', 'Add Registry Client').modal('setButtonModel', [{
-                        buttonText: 'Add',
+                    $('#registry-configuration-dialog').modal('setHeaderText', '添加注册客户端').modal('setButtonModel', [{
+                        buttonText: '添加',
                         color: {
                             base: '#728E9B',
                             hover: '#004849',
@@ -1775,7 +1775,7 @@
                             }
                         }
                     }, {
-                        buttonText: 'Cancel',
+                        buttonText: '取消',
                         color: {
                             base: '#E3E8EB',
                             hover: '#C7D2D7',

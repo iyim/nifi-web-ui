@@ -208,13 +208,13 @@
         var reportingTask = details['component'];
 
         if (nfCommon.isBlank(reportingTask['schedulingPeriod'])) {
-            errors.push('Run schedule must be specified');
+            errors.push('必须指定运行计划');
         }
 
         if (errors.length > 0) {
             nfDialog.showOkDialog({
                 dialogContent: nfCommon.formatUnorderedList(errors),
-                headerText: 'Reporting Task'
+                headerText: '报告任务'
             });
             return false;
         } else {
@@ -278,8 +278,8 @@
             if (isSaveRequired()) {
                 // see if those changes should be saved
                 nfDialog.showYesNoDialog({
-                    headerText: 'Save',
-                    dialogContent: 'Save changes before going to this Controller Service?',
+                    headerText: '保存',
+                    dialogContent: '在转到此Controller Service之前保存更改?',
                     noHandler: function () {
                         deferred.resolve();
                     },
@@ -388,7 +388,7 @@
             // initialize the reporting task configuration dialog
             $('#reporting-task-configuration').data('mode', config.edit).modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Configure Reporting Task',
+                headerText: '配置报告任务',
                 handler: {
                     close: function () {
                         // cancel any active edits
@@ -507,11 +507,11 @@
                     options: [{
                         text: 'Timer driven',
                         value: 'TIMER_DRIVEN',
-                        description: 'Reporting task will be scheduled to run on an interval defined by the run schedule.'
+                        description: '报告任务将安排在运行计划定义的时间间隔内运行.'
                     }, {
                         text: 'CRON driven',
                         value: 'CRON_DRIVEN',
-                        description: 'Reporting task will be scheduled to run on at specific times based on the specified CRON string.'
+                        description: '报告任务将根据指定的CRON字符串安排在特定时间运行.'
                     }],
                     selectedOption: {
                         value: reportingTask['schedulingStrategy']
@@ -528,7 +528,7 @@
                 });
 
                 var buttons = [{
-                    buttonText: 'Apply',
+                    buttonText: '应用',
                     color: {
                         base: '#728E9B',
                         hover: '#004849',
@@ -551,7 +551,7 @@
                     }
                 },
                     {
-                        buttonText: 'Cancel',
+                        buttonText: '取消',
                         color: {
                             base: '#E3E8EB',
                             hover: '#C7D2D7',
@@ -567,7 +567,7 @@
                 // determine if we should show the advanced button
                 if (nfCommon.isDefinedAndNotNull(reportingTask.customUiUrl) && reportingTask.customUiUrl !== '') {
                     buttons.push({
-                        buttonText: 'Advanced',
+                        buttonText: '高级',
                         clazz: 'fa fa-cog button-icon',
                         color: {
                             base: '#E3E8EB',
@@ -602,8 +602,8 @@
                                 if (isSaveRequired()) {
                                     // see if those changes should be saved
                                     nfDialog.showYesNoDialog({
-                                        headerText: 'Save',
-                                        dialogContent: 'Save changes before opening the advanced configuration?',
+                                        headerText: '保存',
+                                        dialogContent: '在打开高级配置之前保存更改?',
                                         noHandler: openCustomUi,
                                         yesHandler: function () {
                                             saveReportingTask(reportingTaskEntity).done(function () {
@@ -716,7 +716,7 @@
                 // determine if we should show the advanced button
                 if (nfCommon.isDefinedAndNotNull(nfCustomUi) && nfCommon.isDefinedAndNotNull(reportingTask.customUiUrl) && reportingTask.customUiUrl !== '') {
                     buttons.push({
-                        buttonText: 'Advanced',
+                        buttonText: '高级',
                         clazz: 'fa fa-cog button-icon',
                         color: {
                             base: '#E3E8EB',
@@ -798,8 +798,8 @@
         promptToDeleteReportingTask: function (reportingTaskEntity) {
             // prompt for deletion
             nfDialog.showYesNoDialog({
-                headerText: 'Delete Reporting Task',
-                dialogContent: 'Delete reporting task \'' + nfCommon.escapeHtml(reportingTaskEntity.component.name) + '\'?',
+                headerText: '删除报告任务',
+                dialogContent: '删除报告任务 \'' + nfCommon.escapeHtml(reportingTaskEntity.component.name) + '\'?',
                 yesHandler: function () {
                     nfReportingTask.remove(reportingTaskEntity);
                 }

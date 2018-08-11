@@ -22,12 +22,12 @@
             <div id="processor-standard-settings-tab-content" class="configuration-tab">
                 <div class="settings-left">
                     <div class="setting">
-                        <div class="setting-name">Name</div>
+                        <div class="setting-name">名称</div>
                         <div id="processor-name-container" class="setting-field">
                             <input type="text" id="processor-name" name="processor-name"/>
                             <div class="processor-enabled-container">
                                 <div id="processor-enabled" class="nf-checkbox checkbox-unchecked"></div>
-                                <span class="nf-checkbox-label"> Enabled</span>
+                                <span class="nf-checkbox-label"> 开启</span>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Type</div>
+                        <div class="setting-name">类型</div>
                         <div class="setting-field">
                             <span id="processor-type"></span>
                         </div>
@@ -50,7 +50,7 @@
                     <div class="setting">
                         <div class="penalty-duration-setting">
                             <div class="setting-name">
-                                Penalty duration
+                                惩罚期限
                                 <div class="fa fa-question-circle" alt="Info" title="The amount of time used when this processor penalizes a FlowFile."></div>
                             </div>
                             <div class="setting-field">
@@ -59,7 +59,7 @@
                         </div>
                         <div class="yield-duration-setting">
                             <div class="setting-name">
-                                Yield duration
+                                让出持续时间
                                 <div class="fa fa-question-circle" alt="Info" title="When a processor yields, it will not be scheduled again until this amount of time elapses."></div>
                             </div>
                             <div class="setting-field">
@@ -85,7 +85,7 @@
                 <div class="settings-right">
                     <div class="setting">
                         <div class="setting-name">
-                            Automatically terminate relationships
+                            自动终止关系
                             <div class="fa fa-question-circle" alt="Info" title="Will automatically terminate FlowFiles sent to a given relationship if it is not defined elsewhere."></div>
                         </div>
                         <div class="setting-field">
@@ -99,7 +99,7 @@
                     <div class="setting">
                         <div class="scheduling-strategy-setting">
                             <div class="setting-name">
-                                Scheduling strategy
+                                调度策略
                                 <div class="fa fa-question-circle" alt="Info" title="The strategy used to schedule this processor."></div>
                             </div>
                             <div class="setting-field">
@@ -108,14 +108,14 @@
                         </div>
                         <div id="event-driven-warning" class="hidden">
                             <div class="processor-configuration-warning-icon"></div>
-                            This strategy is experimental
+                            这种策略是实验性的
                         </div>
                         <div class="clear"></div>
                     </div>
                     <div id="timer-driven-options" class="setting">
                         <div class="concurrently-schedulable-tasks-setting">
                             <div class="setting-name">
-                                Concurrent tasks
+                                并发任务
                                 <div class="fa fa-question-circle" alt="Info" title="The number of tasks that should be concurrently scheduled for this processor."></div>
                             </div>
                             <div class="setting-field">
@@ -124,7 +124,7 @@
                         </div>
                         <div class="scheduling-period-setting">
                             <div class="setting-name">
-                                Run schedule
+                                运行计划
                                 <div class="fa fa-question-circle" alt="Info" title="The amount of time that should elapse between task executions."></div>
                             </div>
                             <div class="setting-field">
@@ -136,7 +136,7 @@
                     <div id="event-driven-options" class="setting">
                         <div class="concurrently-schedulable-tasks-setting">
                             <div class="setting-name">
-                                Concurrent tasks
+                                并发任务
                                 <div class="fa fa-question-circle" alt="Info" title="The number of tasks that should be concurrently scheduled for this processor."></div>
                             </div>
                             <div class="setting-field">
@@ -148,7 +148,7 @@
                     <div id="cron-driven-options" class="setting">
                         <div class="concurrently-schedulable-tasks-setting">
                             <div class="setting-name">
-                                Concurrent tasks
+                                并发任务
                                 <div class="fa fa-question-circle" alt="Info" title="The number of tasks that should be concurrently scheduled for this processor."></div>
                             </div>
                             <div class="setting-field">
@@ -157,7 +157,7 @@
                         </div>
                         <div class="scheduling-period-setting">
                             <div class="setting-name">
-                                Run schedule
+                                运行计划
                                 <div class="fa fa-question-circle" alt="Info" title="The CRON expression that defines when this processor should run."></div>
                             </div>
                             <div class="setting-field">
@@ -169,7 +169,7 @@
                     <div id="execution-node-options" class="setting">
                         <div class="execution-node-setting">
                             <div class="setting-name">
-                                Execution
+                                执行
                                 <div class="fa fa-question-circle" alt="Info" title="The node(s) that this processor will be scheduled to run on when clustered."></div>
                             </div>
                             <div class="setting-field">
@@ -183,7 +183,7 @@
                 <div id="run-duration-setting-container" class="settings-right">
                     <div class="setting">
                         <div class="setting-name">
-                            Run duration
+                            运行时间
                             <div class="fa fa-question-circle" alt="Info"
                                  title="When scheduled to run, the processor will continue running for up to this duration. A run duration of 0ms will execute once when scheduled."></div>
                         </div>
@@ -202,13 +202,13 @@
                                 </div>
                                 <div id="run-duration-slider"></div>
                                 <div id="run-duration-explanation">
-                                    <div id="min-run-duration-explanation">Lower latency</div>
-                                    <div id="max-run-duration-explanation">Higher throughput</div>
+                                    <div id="min-run-duration-explanation">延迟更低</div>
+                                    <div id="max-run-duration-explanation">吞吐量更高</div>
                                     <div class="clear"></div>
                                 </div>
                                 <div id="run-duration-data-loss" class="hidden">
                                     <div class="processor-configuration-warning-icon"></div>
-                                    Source Processors with a run duration greater than 0ms and no incoming connections could lose data when NiFi is shutdown.
+                                    当NiFi关闭时，运行持续时间大于0毫秒且没有传入连接的源处理器可能会丢失数据.
                                 </div>
                             </div>
                         </div>
