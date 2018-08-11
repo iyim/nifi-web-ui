@@ -21,14 +21,14 @@
     <span id="initial-flowfile-query" class="hidden"><c:out value="${param.flowFileUuid}"/></span>
     <span id="nifi-controller-uri" class="hidden"></span>
     <span id="nifi-content-viewer-url" class="hidden"></span>
-    <div id="provenance-header-text">NiFi Data Provenance</div>
+    <div id="provenance-header-text">NiFi 数据源</div>
     <div id="provenance-event-search" class="provenance-panel">
         <div id="provenance-filter-controls" class="filter-controls">
             <div id="provenance-filter-stats" class="filter-status">
-                Displaying&nbsp;<span id="displayed-events"></span>&nbsp;of&nbsp;<span id="total-events"></span>
+                展示&nbsp;<span id="displayed-events"></span>&nbsp;的&nbsp;<span id="total-events"></span>
             </div>
             <div id="oldest-event-message">
-                Oldest event available:&nbsp;<span id="oldest-event" class="value-color"></span>
+                最古老的活动:&nbsp;<span id="oldest-event" class="value-color"></span>
             </div>
             <div id="provenance-filter-container" class="filter-container">
                 <input type="text" placeholder="Filter" id="provenance-filter" class="filter"/>
@@ -38,7 +38,7 @@
         <div id="provenance-search-container">
             <div id="provenance-search-overview">
                 <span id="provenance-query-message">&nbsp;</span>
-                <span id="clear-provenance-search" class="link">Clear search</span>
+                <span id="clear-provenance-search" class="link">清除搜索</span>
             </div>
             <button id="provenance-search-button" class="fa fa-search"></button>
         </div>
@@ -46,7 +46,7 @@
         <div id="provenance-refresh-container">
             <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
             <div id="provenance-last-refreshed-container" class="last-refreshed-container">
-                Last updated:&nbsp;<span id="provenance-last-refreshed" class="value-color"></span>
+                上次更新:&nbsp;<span id="provenance-last-refreshed" class="value-color"></span>
             </div>
             <div id="provenance-loading-container" class="loading-container"></div>
         </div>
