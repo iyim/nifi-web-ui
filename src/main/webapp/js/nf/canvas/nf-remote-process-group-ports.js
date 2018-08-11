@@ -64,10 +64,10 @@
      */
     var initRemotePortConfigurationDialog = function () {
         $('#remote-port-configuration').modal({
-            headerText: 'Configure Remote Port',
+            headerText: '配置远程端口',
             scrollableContentStyle: 'scrollable',
             buttons: [{
-                buttonText: 'Apply',
+                buttonText: '应用',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -170,7 +170,7 @@
                             });
                         } else {
                             nfDialog.showOkDialog({
-                                headerText: 'Remote Process Group Ports',
+                                headerText: '远程流程组端口',
                                 dialogContent: portValidationErrors.reduce(function (prev, curr) {
                                     return typeof(prev) === 'string' ? prev + ' ' + curr : curr;
                                 })
@@ -183,7 +183,7 @@
                 }
             },
                 {
-                    buttonText: 'Cancel',
+                    buttonText: '取消',
                     color: {
                         base: '#E3E8EB',
                         hover: '#C7D2D7',
@@ -216,9 +216,9 @@
     var initRemoteProcessGroupConfigurationDialog = function () {
         $('#remote-process-group-ports').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: 'Remote Process Group Ports',
+            headerText: '远程流程组端口',
             buttons: [{
-                buttonText: 'Close',
+                buttonText: '关闭',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -355,7 +355,7 @@
                 $('<div class="remote-port-removed"/>').appendTo(portContainerEditContainer).qtip($.extend({},
                     nfCommon.config.tooltipConfig,
                     {
-                        content: 'This port has been removed.'
+                        content: '此端口已经被移除.'
                     }));
             }
 
@@ -453,7 +453,7 @@
                             }
 
                             nfDialog.showOkDialog({
-                                headerText: 'Remote Process Group Ports',
+                                headerText: '远程流程组端口',
                                 dialogContent: content
                             });
                         } else {
@@ -483,7 +483,7 @@
 
         // add the comments for this port
         if (nfCommon.isBlank(port.comments)) {
-            $('<div class="remote-port-description unset">No description specified.</div>').appendTo(portContainerDetailsContainer);
+            $('<div class="remote-port-description unset">没有指定说明.</div>').appendTo(portContainerDetailsContainer);
         } else {
             $('<div class="remote-port-description"></div>').text(port.comments).appendTo(portContainerDetailsContainer);
         }
@@ -499,13 +499,13 @@
         // add this ports concurrent tasks
         $('<div>' +
             '<div class="setting-name">' +
-            'Concurrent tasks' +
+            '并发任务' +
             '<div class="processor-setting concurrent-tasks-info fa fa-question-circle"></div>' +
             '</div>' +
             '</div>').append(concurrentTasks).appendTo(concurrentTasksContainer).find('div.concurrent-tasks-info').qtip($.extend({},
             nfCommon.config.tooltipConfig,
             {
-                content: 'The number of tasks that should be concurrently scheduled for this port.'
+                content: '应为此端口同时安排的任务数.'
             }));
 
         var compressionContainer = $('<div class="compression-container"></div>').appendTo(portContainerDetailsContainer);
