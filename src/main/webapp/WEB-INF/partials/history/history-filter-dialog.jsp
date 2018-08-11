@@ -18,7 +18,7 @@
 <div id="history-filter-dialog" class="hidden medium-dialog">
     <div class="dialog-content">
         <div class="setting">
-            <div class="setting-name">Filter</div>
+            <div class="setting-name">过滤器</div>
             <div class="setting-field">
                 <div id="history-filter-controls">
                     <input type="text" id="history-filter" class="history-large-input"/>
@@ -30,7 +30,7 @@
         <div class="setting">
             <div class="start-date-setting">
                 <div class="setting-name">
-                    Start date
+                    开始日期
                     <div class="fa fa-question-circle" alt="Info" title="The start date in the format 'mm/dd/yyyy'. Must also specify start time."></div>
                 </div>
                 <div class="setting-field">
@@ -39,7 +39,7 @@
             </div>
             <div class="start-time-setting">
                 <div class="setting-name">
-                    Start time (<span class="timezone"></span>)
+                    开始时间 (<span class="timezone"></span>)
                     <div class="fa fa-question-circle" alt="Info" title="The start time in the format 'hh:mm:ss'. Must also specify start date."></div>
                 </div>
                 <div class="setting-field">
@@ -51,7 +51,7 @@
         <div class="setting">
             <div class="end-date-setting">
                 <div class="setting-name">
-                    End date
+                    结束日期
                     <div class="fa fa-question-circle" alt="Info" title="The end date in the format 'mm/dd/yyyy'. Must also specify end time."></div>
                 </div>
                 <div class="setting-field">
@@ -60,7 +60,7 @@
             </div>
             <div class="end-time-setting">
                 <div class="setting-name">
-                    End time (<span class="timezone"></span>)
+                    结束时间 (<span class="timezone"></span>)
                     <div class="fa fa-question-circle" alt="Info" title="The end time in the format 'hh:mm:ss'. Must also specify end date."></div>
                 </div>
                 <div class="setting-field">
