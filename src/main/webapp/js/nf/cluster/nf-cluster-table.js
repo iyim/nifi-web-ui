@@ -910,8 +910,8 @@
     var promptForConnect = function (node) {
         // prompt to connect
         nfDialog.showYesNoDialog({
-            headerText: 'Connect Node',
-            dialogContent: 'Connect \'' + formatNodeAddress(node) + '\' to this cluster?',
+            headerText: '连接节点',
+            dialogContent: '连接 \'' + formatNodeAddress(node) + '\' 到此集群?',
             yesHandler: function () {
                 connect(node.nodeId);
             }
@@ -954,8 +954,8 @@
     var promptForDisconnect = function (node) {
         // prompt for disconnect
         nfDialog.showYesNoDialog({
-            headerText: 'Disconnect Node',
-            dialogContent: 'Disconnect \'' + formatNodeAddress(node) + '\' from the cluster?',
+            headerText: '断开节点',
+            dialogContent: '从集群中断开 \'' + formatNodeAddress(node) + '\' ?',
             yesHandler: function () {
                 disconnect(node.nodeId);
             }
@@ -999,8 +999,8 @@
     var promptForRemoval = function (node) {
         // prompt for disconnect
         nfDialog.showYesNoDialog({
-            headerText: 'Remove Node',
-            dialogContent: 'Remove \'' + formatNodeAddress(node) + '\' from the cluster?',
+            headerText: '移除节点',
+            dialogContent: '从集群中移除 \'' + formatNodeAddress(node) + '\' ?',
             yesHandler: function () {
                 remove(node.nodeId);
             }
@@ -1514,7 +1514,7 @@
             // initialize the user details dialog
             $('#node-details-dialog').modal({
                 scrollableContentStyle: 'scrollable',
-                headerText: 'Node Details',
+                headerText: '节点详情',
                 buttons: [{
                     buttonText: 'Ok',
                     color: {
