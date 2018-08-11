@@ -22,12 +22,12 @@
             <div id="reporting-task-standard-settings-tab-content" class="configuration-tab">
                 <div class="settings-left">
                     <div class="setting">
-                        <div class="setting-name">Name</div>
+                        <div class="setting-name">名称</div>
                         <div class="reporting-task-editable setting-field">
                             <input type="text" id="reporting-task-name" name="reporting-task-name"/>
                             <div class="reporting-task-enabled-container">
                                 <div id="reporting-task-enabled" class="nf-checkbox checkbox-unchecked"></div>
-                                <span class="nf-checkbox-label"> Enabled</span>
+                                <span class="nf-checkbox-label"> 开启</span>
                             </div>
                         </div>
                         <div class="reporting-task-read-only setting-field hidden">
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Type</div>
+                        <div class="setting-name">类型</div>
                         <div class="setting-field">
                             <span id="reporting-task-type"></span>
                         </div>
@@ -55,7 +55,7 @@
                 <div class="settings-right">
                     <div class="setting">
                         <div class="setting-name">
-                            Scheduling strategy
+                            调度策略
                             <div class="fa fa-question-circle" alt="Info" title="The strategy used to schedule this reporting task."></div>
                         </div>
                         <div class="reporting-task-editable setting-field">
@@ -67,7 +67,7 @@
                     </div>
                     <div class="setting">
                         <div class="setting-name">
-                            Run schedule
+                            运行计划
                             <div class="fa fa-question-circle" alt="Info" title="The amount of time that should elapse between task executions."></div>
                         </div>
                         <div class="reporting-task-editable setting-field">
