@@ -17,13 +17,13 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <div id="cluster">
     <div id="cluster-header-and-filter">
-        <div id="cluster-header-text">NiFi Cluster</div>
+        <div id="cluster-header-text">NiFi 集群</div>
     </div>
     <div id="cluster-tabs" class="tab-container"></div>
     <div id="cluster-tabs-content">
         <div id="cluster-filter-controls" class="filter-controls">
             <div id="cluster-filter-stats" class="filter-status">
-                Displaying&nbsp;<span id="displayed-rows"></span>&nbsp;of&nbsp;<span id="total-rows"></span>
+                展示&nbsp;<span id="displayed-rows"></span>&nbsp;的&nbsp;<span id="total-rows"></span>
             </div>
             <div id="cluster-filter-container" class="filter-container">
                 <input type="text" id="cluster-filter" class="filter" placeholder="Filter"/>
@@ -56,7 +56,7 @@
 <div id="cluster-refresh-container">
     <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
     <div id="cluster-last-refreshed-container" class="last-refreshed-container">
-        Last updated:&nbsp;<span id="cluster-last-refreshed"></span>
+        上次更新:&nbsp;<span id="cluster-last-refreshed"></span>
     </div>
     <div id="cluster-loading-container" class="loading-container"></div>
 </div>
