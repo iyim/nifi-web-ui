@@ -18,7 +18,7 @@
 <div id="remote-port-configuration" class="hidden medium-dialog">
     <div class="dialog-content">
         <div class="setting">
-            <div class="setting-name">Name</div>
+            <div class="setting-name">名称</div>
             <div class="setting-field">
                 <span id="remote-port-id" class="hidden"></span>
                 <span id="remote-port-type" class="hidden"></span>
@@ -27,25 +27,25 @@
         </div>
         <div class="setting">
             <div class="setting-name">
-                Concurrent tasks
+                并发任务
                 <div class="fa fa-question-circle" alt="Info" title="The number of tasks that should be concurrently scheduled for this port."></div>
             </div>
             <div class="setting-field">
                 <input id="remote-port-concurrent-tasks" type="text"/>
                 <div id="remote-port-use-compression-container">
                     <div id="remote-port-use-compression" class="nf-checkbox"></div>
-                    <span class="nf-checkbox-label">Compressed</span>
+                    <span class="nf-checkbox-label">压缩</span>
                 </div>
             </div>
             <div class="clear"></div>
         </div>
         <div class="batch-settings">
             <div class="setting-name">
-                Batch Settings:
+                批量设置:
             </div>
             <div class="setting batch-setting">
                 <div class="setting-name">
-                    Count
+                    数量
                     <div class="fa fa-question-circle" alt="Info" title="The preferred number of flow files to include in a transaction for this port."></div>
                 </div>
                 <div class="setting-field">
@@ -54,7 +54,7 @@
             </div>
             <div class="setting batch-setting">
                 <div class="setting-name">
-                    Size
+                    大小
                     <div class="fa fa-question-circle" alt="Info" title="The preferred number of bytes to include in a transaction for this port."></div>
                 </div>
                 <div class="setting-field">
@@ -63,7 +63,7 @@
             </div>
             <div class="setting batch-setting">
                 <div class="setting-name">
-                    Duration
+                    持续时间
                     <div class="fa fa-question-circle" alt="Info" title="The preferred amount of time that a transaction should span for this port."></div>
                 </div>
                 <div class="setting-field">
