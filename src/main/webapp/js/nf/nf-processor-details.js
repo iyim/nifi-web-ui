@@ -116,7 +116,7 @@
 
             // configure the processor details dialog
             $('#processor-details').modal({
-                headerText: 'Processor Details',
+                headerText: '处理器详情',
                 scrollableContentStyle: 'scrollable',
                 handler: {
                     close: function () {
@@ -277,7 +277,7 @@
                 // determine if we should show the advanced button
                 if (top === window && nfCommon.isDefinedAndNotNull(nfCustomUi) && nfCommon.isDefinedAndNotNull(processor.config.customUiUrl) && processor.config.customUiUrl !== '') {
                     buttons.push({
-                        buttonText: 'Advanced',
+                        buttonText: '高级',
                         clazz: 'fa fa-cog button-icon',
                         color: {
                             base: '#E3E8EB',
@@ -310,7 +310,7 @@
             }).fail(function (xhr, status, error) {
                 if (xhr.status === 400 || xhr.status === 404 || xhr.status === 409) {
                     nfDialog.showOkDialog({
-                        headerText: 'Error',
+                        headerText: '错误',
                         dialogContent: nfCommon.escapeHtml(xhr.responseText)
                     });
                 } else {
