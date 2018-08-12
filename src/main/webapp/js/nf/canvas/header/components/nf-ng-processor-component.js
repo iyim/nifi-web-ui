@@ -581,7 +581,7 @@
 
                             // build the combo options
                             var options = [{
-                                text: 'all groups',
+                                text: '所有组',
                                 value: ''
                             }];
                             groups.each(function (group) {
@@ -720,7 +720,7 @@
                     if (name === '' || processorType === '') {
                         nfDialog.showOkDialog({
                             headerText: '添加处理器',
-                            dialogContent: 'The type of processor to create must be selected.'
+                            dialogContent: '必须选择要创建的处理器类型.'
                         });
                     } else {
                         // create the new processor
