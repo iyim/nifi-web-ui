@@ -22,10 +22,10 @@
         <div id="templates-header-text">NiFi 模板</div>
         <div id="templates-filter-controls">
             <div id="templates-filter-stats" class="filter-status">
-                展示&nbsp;<span id="displayed-templates"></span>&nbsp;的&nbsp;<span id="total-templates"></span>
+                展示&nbsp;<span id="displayed-templates"></span>&nbsp;/&nbsp;<span id="total-templates"></span>
             </div>
             <div id="templates-filter-container" class="filter-container">
-                <input type="text" id="templates-filter" class="filter" placeholder="Filter"/>
+                <input type="text" id="templates-filter" class="filter" placeholder="过滤"/>
                 <div id="templates-filter-type" class="filter-type"></div>
             </div>
         </div>
@@ -33,7 +33,7 @@
     <div id="templates-table"></div>
 </div>
 <div id="templates-refresh-container">
-    <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
+    <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="刷新"></button>
     <div id="templates-last-refreshed-container" class="last-refreshed-container">
         上次更新:&nbsp;<span id="templates-last-refreshed" class="value-color"></span>
     </div>

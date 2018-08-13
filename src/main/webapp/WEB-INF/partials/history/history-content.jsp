@@ -26,15 +26,15 @@
                 已应用过滤器.&nbsp;
                 <span id="clear-history-filter" class="link">清除过滤器</span>
             </div>
-            <button id="history-filter-button" title="Filter History" class="fa fa-filter"></button>
-            <button id="history-purge-button" title="Purge History" class="fa fa-eraser hidden"></button>
+            <button id="history-filter-button" title="过滤历史" class="fa fa-filter"></button>
+            <button id="history-purge-button" title="清除历史" class="fa fa-eraser hidden"></button>
         </div>
         <div class="clear"></div>
     </div>
     <div id="history-table"></div>
 </div>
 <div id="history-refresh-container">
-    <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
+    <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="刷新"></button>
     <div id="history-last-refreshed-container" class="last-refreshed-container">
         上次更新:&nbsp;<span id="history-last-refreshed" class="value-color"></span>
     </div>

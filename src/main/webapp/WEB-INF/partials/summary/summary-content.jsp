@@ -17,16 +17,16 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <div id="summary">
     <div id="summary-header-and-filter">
-        <div id="summary-header-text">NiFi 概述</div>
+        <div id="summary-header-text">NiFi 概览</div>
     </div>
     <div id="summary-tabs" class="tab-container"></div>
     <div id="summary-tabs-content">
         <div id="summary-filter-controls" class="filter-controls">
             <div id="summary-filter-status" class="filter-status">
-                展示&nbsp;<span id="displayed-items"></span>&nbsp;of&nbsp;<span id="total-items"></span>
+                展示&nbsp;<span id="displayed-items"></span>&nbsp;/&nbsp;<span id="total-items"></span>
             </div>
             <div id="summary-filter-container" class="filter-container">
-                <input type="text" placeholder="Filter" id="summary-filter" class="filter"/>
+                <input type="text" placeholder="过滤" id="summary-filter" class="filter"/>
                 <div id="summary-filter-type" class="filter-type"></div>
             </div>
         </div>

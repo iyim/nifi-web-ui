@@ -126,9 +126,9 @@
         // configure the filter dialog
         $('#history-filter-dialog').modal({
             scrollableContentStyle: 'scrollable',
-            headerText: '过滤器历史记录',
+            headerText: '过滤历史记录',
             buttons: [{
-                buttonText: 'Filter',
+                buttonText: '过滤',
                 color: {
                     base: '#728E9B',
                     hover: '#004849',
@@ -301,7 +301,7 @@
         // define a custom formatter for the more details column
         var moreDetailsFormatter = function (row, cell, value, columnDef, dataContext) {
             if (dataContext.canRead === true) {
-                return '<div title="View Details" class="pointer show-action-details fa fa-info-circle"></div>';
+                return '<div title="查看详情" class="pointer show-action-details fa fa-info-circle"></div>';
             }
             return "";
         };
@@ -309,7 +309,7 @@
         // define how general values are formatted
         var valueFormatter = function (row, cell, value, columnDef, dataContext) {
             if (dataContext.canRead !== true) {
-                return '<span class="unset" style="font-size: 13px; padding-top: 2px;">Not authorized</span>';
+                return '<span class="unset" style="font-size: 13px; padding-top: 2px;">未授权</span>';
             }
             return nfCommon.formatValue(dataContext.action[columnDef.field]);
         };
@@ -327,7 +327,7 @@
             },
             {
                 id: 'timestamp',
-                name: 'Date/Time',
+                name: '日期/时间',
                 field: 'timestamp',
                 sortable: true,
                 resizable: true,
@@ -335,7 +335,7 @@
             },
             {
                 id: 'sourceName',
-                name: 'Name',
+                name: '名称',
                 field: 'sourceName',
                 sortable: true,
                 resizable: true,
@@ -344,14 +344,14 @@
             {
                 id: 'sourceType',
                 name: 'Type',
-                field: 'sourceType',
+                field: '来源类型',
                 sortable: true,
                 resizable: true,
                 formatter: valueFormatter
             },
             {
                 id: 'operation',
-                name: 'Operation',
+                name: '操作',
                 field: 'operation',
                 sortable: true,
                 resizable: true,
@@ -359,7 +359,7 @@
             },
             {
                 id: 'userIdentity',
-                name: 'User',
+                name: '用户',
                 field: 'userIdentity',
                 sortable: true,
                 resizable: true,

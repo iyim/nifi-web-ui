@@ -20,10 +20,10 @@
         <div id="counters-header-text">NiFi 计数器</div>
         <div id="counters-filter-controls">
             <div id="counters-filter-stats" class="filter-status">
-                展示&nbsp;<span id="displayed-counters"></span>&nbsp;的&nbsp;<span id="total-counters"></span>
+                展示&nbsp;<span id="displayed-counters"></span>&nbsp;/&nbsp;<span id="total-counters"></span>
             </div>
             <div id="counters-filter-container" class="filter-container">
-                <input type="text" id="counters-filter" placeholder="Filter" class="filter"/>
+                <input type="text" id="counters-filter" placeholder="过滤" class="filter"/>
                 <div id="counters-filter-type" class="filter-type"></div>
             </div>
         </div>
@@ -31,7 +31,7 @@
     <div id="counters-table"></div>
 </div>
 <div id="counters-refresh-container">
-    <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
+    <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="刷新"></button>
     <div id="counters-last-refreshed-container" class="last-refreshed-container">
         上次更新:&nbsp;<span id="counters-last-refreshed" class="value-color"></span>
     </div>

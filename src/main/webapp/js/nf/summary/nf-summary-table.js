@@ -357,7 +357,7 @@
         var nameColumn = {
             id: 'name',
             field: 'name',
-            name: 'Name',
+            name: '名称',
             formatter: nameFormatter,
             sortable: true,
             resizable: true
@@ -365,15 +365,15 @@
         var runStatusColumn = {
             id: 'runStatus',
             field: 'runStatus',
-            name: 'Run Status',
+            name: '运行状态',
             formatter: runStatusFormatter,
             sortable: true
         };
         var inputColumn = {
             id: 'input',
             field: 'input',
-            name: '<span class="input-title">入</span>&nbsp;/&nbsp;<span class="input-size-title">Size</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
-            toolTip: 'Count / data size in the last 5 min',
+            name: '<span class="input-title">入</span>&nbsp;/&nbsp;<span class="input-size-title">大小</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 分钟</span>',
+            toolTip: '最近5分钟内的计数/数据大小',
             sortable: true,
             defaultSortAsc: false,
             resizable: true,
@@ -382,8 +382,8 @@
         var ioColumn = {
             id: 'io',
             field: 'io',
-            name: '<span class="read-title">读</span>&nbsp;/&nbsp;<span class="written-title">Write</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
-            toolTip: 'Data size in the last 5 min',
+            name: '<span class="read-title">读</span>&nbsp;/&nbsp;<span class="written-title">写</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 分钟</span>',
+            toolTip: '最近5分钟的数据大小',
             formatter: ioFormatter,
             sortable: true,
             defaultSortAsc: false,
@@ -392,8 +392,8 @@
         var outputColumn = {
             id: 'output',
             field: 'output',
-            name: '<span class="output-title">出</span>&nbsp;/&nbsp;<span class="output-size-title">Size</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
-            toolTip: 'Count / data size in the last 5 min',
+            name: '<span class="output-title">出</span>&nbsp;/&nbsp;<span class="output-size-title">大小</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 分钟</span>',
+            toolTip: '最近5分钟内的计数/数据大小',
             sortable: true,
             defaultSortAsc: false,
             resizable: true,
@@ -402,8 +402,8 @@
         var tasksTimeColumn = {
             id: 'tasks',
             field: 'tasks',
-            name: '<span class="tasks-title">任务</span>&nbsp;/&nbsp;<span class="time-title">Time</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
-            toolTip: 'Count / duration in the last 5 min',
+            name: '<span class="tasks-title">任务</span>&nbsp;/&nbsp;<span class="time-title">时间</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 分钟</span>',
+            toolTip: '最近5分钟的计数/持续时间',
             formatter: taskTimeFormatter,
             sortable: true,
             defaultSortAsc: false,
@@ -427,7 +427,7 @@
             {
                 id: 'type',
                 field: 'type',
-                name: 'Type',
+                name: '类型',
                 sortable: true,
                 resizable: true,
                 formatter: nfCommon.genericValueFormatter
@@ -435,11 +435,11 @@
             {
                 id: 'parentGroup',
                 field: 'parentProcessGroupName',
-                name: 'Process Group',
+                name: '父流程组',
                 sortable: true,
                 resizable: true,
                 formatter: nfCommon.genericValueFormatter,
-                toolTip: 'Parent Process Group name'
+                toolTip: '父流程组名称'
             },
             runStatusColumn,
             inputColumn,
@@ -1027,13 +1027,13 @@
             sortable: true,
             width: 50,
             maxWidth: 50,
-            toolTip: 'Sorts based on presence of bulletins'
+            toolTip: '根据公告的存在进行排序'
         };
         var transferredColumn = {
             id: 'transferred',
             field: 'transferred',
-            name: '<span class="transferred-title">Transferred</span>&nbsp;/&nbsp;<span class="transferred-size-title">Size</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
-            toolTip: 'Count / data size transferred to and from connections in the last 5 min',
+            name: '<span class="transferred-title">传输</span>&nbsp;/&nbsp;<span class="transferred-size-title">数据大小</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 分钟</span>',
+            toolTip: '在最后5分钟内传输到连接和从连接传输的计数/数据大小',
             resizable: true,
             defaultSortAsc: false,
             sortable: true,
@@ -1042,8 +1042,8 @@
         var sentColumn = {
             id: 'sent',
             field: 'sent',
-            name: '<span class="sent-title">Sent</span>&nbsp;/&nbsp;<span class="sent-size-title">Size</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
-            toolTip: 'Count / data size in the last 5 min',
+            name: '<span class="sent-title">发送</span>&nbsp;/&nbsp;<span class="sent-size-title">数据大小</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 分钟</span>',
+            toolTip: '最近5分钟内的计数/数据大小',
             sortable: true,
             defaultSortAsc: false,
             resizable: true,
@@ -1052,8 +1052,8 @@
         var receivedColumn = {
             id: 'received',
             field: 'received',
-            name: '<span class="received-title">Received</span>&nbsp;/&nbsp;<span class="received-size-title">Size</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 min</span>',
-            toolTip: 'Count / data size in the last 5 min',
+            name: '<span class="received-title">接收</span>&nbsp;/&nbsp;<span class="received-size-title">数据大小</span>&nbsp;<span style="font-weight: normal; overflow: hidden;">5 分钟</span>',
+            toolTip: '最近5分钟内的计数/数据大小',
             sortable: true,
             defaultSortAsc: false,
             resizable: true,
@@ -1066,23 +1066,23 @@
             switch (value) {
                 case 'UP_TO_DATE':
                     classes = 'fa fa-check up-to-date';
-                    label = 'Up to date';
+                    label = '最新';
                     break;
                 case 'LOCALLY_MODIFIED':
                     classes = 'fa fa-asterisk locally-modified';
-                    label = 'Locally modified';
+                    label = '本地修改';
                     break;
                 case 'STALE':
                     classes = 'fa fa-arrow-circle-up stale';
-                    label = 'Stale';
+                    label = '旧的';
                     break;
                 case 'LOCALLY_MODIFIED_AND_STALE':
                     classes = 'fa fa-exclamation-circle locally-modified-and-stale';
-                    label = 'Locally modified and stale';
+                    label = '本地修改和陈旧';
                     break;
                 case 'SYNC_FAILURE':
                     classes = 'fa fa-question sync-failure';
-                    label = 'Sync failure';
+                    label = '同步失败';
                     break;
                 default:
                     classes = '';
@@ -1097,7 +1097,7 @@
             {
                 id: 'name',
                 field: 'name',
-                name: 'Name',
+                name: '名称',
                 sortable: true,
                 resizable: true,
                 formatter: valueFormatter
@@ -1105,7 +1105,7 @@
             {
                 id: 'versionedFlowState',
                 field: 'versionedFlowState',
-                name: 'Version State',
+                name: '版本状态',
                 sortable: true,
                 resizable: true,
                 formatter: versionStateFormatter
@@ -1125,15 +1125,15 @@
                 var markup = '';
 
                 if (isInShell && dataContext.groupId !== null) {
-                    markup += '<div class="pointer go-to fa fa-long-arrow-right" title="Go To Process Group"></div>';
+                    markup += '<div class="pointer go-to fa fa-long-arrow-right" title="转到流程组"></div>';
                 }
 
                 if (nfCommon.SUPPORTS_SVG) {
-                    markup += '<div class="pointer show-process-group-status-history fa fa-area-chart" title="View Status History"></div>';
+                    markup += '<div class="pointer show-process-group-status-history fa fa-area-chart" title="查看状态历史记录"></div>';
                 }
 
                 if (isClustered) {
-                    markup += '<div class="pointer show-cluster-process-group-summary fa fa-cubes" title="View Process Group Details"></div>';
+                    markup += '<div class="pointer show-cluster-process-group-summary fa fa-cubes" title="查看流程组详细信息"></div>';
                 }
 
                 return markup;
@@ -1309,7 +1309,7 @@
             {
                 id: 'node',
                 field: 'node',
-                name: 'Node',
+                name: '节点',
                 sortable: true,
                 resizable: true,
                 formatter: nfCommon.genericValueFormatter
@@ -1385,11 +1385,11 @@
                 var markup = '';
 
                 if (isInShell) {
-                    markup += '<div class="pointer go-to fa fa-long-arrow-right" title="Go To Input Port"></div>';
+                    markup += '<div class="pointer go-to fa fa-long-arrow-right" title="转到输入端口"></div>';
                 }
 
                 if (isClustered) {
-                    markup += '<div class="pointer show-cluster-input-port-summary fa fa-cubes" title="View Input Port Details"></div>';
+                    markup += '<div class="pointer show-cluster-input-port-summary fa fa-cubes" title="查看输入端口详细信息"></div>';
                 }
 
                 return markup;
@@ -1560,7 +1560,7 @@
             {
                 id: 'node',
                 field: 'node',
-                name: 'Node',
+                name: '节点',
                 sortable: true,
                 resizable: true,
                 formatter: nfCommon.genericValueFormatter
@@ -1632,11 +1632,11 @@
                 var markup = '';
 
                 if (isInShell) {
-                    markup += '<div class="pointer go-to fa fa-long-arrow-right" title="Go To Output Port"></div>';
+                    markup += '<div class="pointer go-to fa fa-long-arrow-right" title="转到输出端口"></div>';
                 }
 
                 if (isClustered) {
-                    markup += '<div class="pointer show-cluster-output-port-summary fa fa-cubes" title="View Output Port Details"></div>';
+                    markup += '<div class="pointer show-cluster-output-port-summary fa fa-cubes" title="查看输出端口详细信息"></div>';
                 }
 
                 return markup;
@@ -1807,7 +1807,7 @@
             {
                 id: 'node',
                 field: 'node',
-                name: 'Node',
+                name: '节点',
                 sortable: true,
                 resizable: true,
                 formatter: nfCommon.genericValueFormatter
@@ -1890,7 +1890,7 @@
         var transmissionStatusColumn = {
             id: 'transmissionStatus',
             field: 'transmissionStatus',
-            name: 'Transmitting',
+            name: '传输',
             formatter: transmissionStatusFormatter,
             sortable: true,
             resizable: true
@@ -1898,7 +1898,7 @@
         var targetUriColumn = {
             id: 'targetUri',
             field: 'targetUri',
-            name: 'Target URI',
+            name: '目标 URI',
             sortable: true,
             resizable: true,
             formatter: nfCommon.genericValueFormatter
@@ -1915,7 +1915,7 @@
                 sortable: true,
                 width: 50,
                 maxWidth: 50,
-                toolTip: 'Sorts based on presence of bulletins'
+                toolTip: '根据公告的存在进行排序'
             },
             nameColumn,
             targetUriColumn,
@@ -1931,15 +1931,15 @@
                 var markup = '';
 
                 if (isInShell) {
-                    markup += '<div class="pointer go-to fa fa-long-arrow-right" title="Go To Process Group"></div>';
+                    markup += '<div class="pointer go-to fa fa-long-arrow-right" title="转到流程组"></div>';
                 }
 
                 if (nfCommon.SUPPORTS_SVG) {
-                    markup += '<div class="pointer show-remote-process-group-status-history fa fa-area-chart" title="View Status History"></div>';
+                    markup += '<div class="pointer show-remote-process-group-status-history fa fa-area-chart" title="查看状态历史"></div>';
                 }
 
                 if (isClustered) {
-                    markup += '<div class="pointer show-cluster-remote-process-group-summary fa fa-cubes" title="View Remote Process Group Details"></div>';
+                    markup += '<div class="pointer show-cluster-remote-process-group-summary fa fa-cubes" title="查看远程流程组详情"></div>';
                 }
 
                 return markup;
@@ -2112,7 +2112,7 @@
             {
                 id: 'node',
                 field: 'node',
-                name: 'Node',
+                name: '节点',
                 sortable: true,
                 resizable: true,
                 formatter: nfCommon.genericValueFormatter
@@ -2560,15 +2560,15 @@
         var storageUsageContainer = $('<div class="storage-usage"></div>').appendTo(container);
 
         var storage = $('<div class="storage-identifier setting-name"></div>');
-        storage.text('用法:');
+        storage.text('已使用:');
         if (nfCommon.isDefinedAndNotNull(storageUsage.identifier)) {
-            storage.text('用法 ' + storageUsage.identifier + ':');
+            storage.text('已使用 ' + storageUsage.identifier + ':');
         }
         storage.appendTo(storageUsageContainer);
 
         (nfNgBridge.injector.get('$compile')($('<md-progress-linear class="md-hue-2" md-mode="determinate" value="' + (used / total) * 100 + '" aria-label="FlowFile Repository Storage Usage"></md-progress-linear>'))(nfNgBridge.rootScope)).appendTo(storageUsageContainer);
 
-        var usageDetails = $('<div class="storage-usage-details"></div>').text(' (' + storageUsage.usedSpace + ' of ' + storageUsage.totalSpace + ')').prepend($('<b></b>').text(Math.round((used / total) * 100) + '%'));
+        var usageDetails = $('<div class="storage-usage-details"></div>').text(' (' + storageUsage.usedSpace + ' / ' + storageUsage.totalSpace + ')').prepend($('<b></b>').text(Math.round((used / total) * 100) + '%'));
         $('<div class="storage-usage-header"></div>').append(usageDetails).append('<div class="clear"></div>').appendTo(storageUsageContainer);
     };
 

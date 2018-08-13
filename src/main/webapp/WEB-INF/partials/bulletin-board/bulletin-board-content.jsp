@@ -20,7 +20,7 @@
         <div id="bulletin-board-header-text">NiFi 模板</div>
         <div id="bulletin-board-filter-controls">
             <div id="bulletin-board-filter-container" class="filter-container">
-                <input type="text" placeholder="Filter" id="bulletin-board-filter" class="filter"/>
+                <input type="text" placeholder="过滤" id="bulletin-board-filter" class="filter"/>
                 <div id="bulletin-board-filter-type" class="filter-type"></div>
             </div>
         </div>
@@ -34,7 +34,7 @@
         自动刷新
     </md-switch>
     <button id="refresh-button" ng-click="appCtrl.serviceProvider.bulletinBoardCtrl.loadBulletins()"
-            class="refresh-button pointer fa fa-refresh" title="Start/Stop auto refresh"></button>
+            class="refresh-button pointer fa fa-refresh" title="开启/停止 自动刷新"></button>
     <div id="bulletin-board-last-refreshed-container" class="last-refreshed-container">
         上次更新:&nbsp;<span id="bulletin-board-last-refreshed" class="value-color"></span>
     </div>

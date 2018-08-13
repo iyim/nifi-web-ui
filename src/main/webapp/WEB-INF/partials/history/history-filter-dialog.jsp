@@ -31,7 +31,7 @@
             <div class="start-date-setting">
                 <div class="setting-name">
                     开始日期
-                    <div class="fa fa-question-circle" alt="Info" title="The start date in the format 'mm/dd/yyyy'. Must also specify start time."></div>
+                    <div class="fa fa-question-circle" alt="Info" title="开始日期格式 'mm/dd/yyyy'. 必须指定开始时间."></div>
                 </div>
                 <div class="setting-field">
                     <input type="text" id="history-filter-start-date" class="history-small-input"/>
@@ -40,7 +40,7 @@
             <div class="start-time-setting">
                 <div class="setting-name">
                     开始时间 (<span class="timezone"></span>)
-                    <div class="fa fa-question-circle" alt="Info" title="The start time in the format 'hh:mm:ss'. Must also specify start date."></div>
+                    <div class="fa fa-question-circle" alt="Info" title="开始时间格式 'hh:mm:ss'. 必须指定开始日期."></div>
                 </div>
                 <div class="setting-field">
                     <input type="text" id="history-filter-start-time" class="history-small-input"/>
@@ -52,7 +52,7 @@
             <div class="end-date-setting">
                 <div class="setting-name">
                     结束日期
-                    <div class="fa fa-question-circle" alt="Info" title="The end date in the format 'mm/dd/yyyy'. Must also specify end time."></div>
+                    <div class="fa fa-question-circle" alt="Info" title="结束日期格式 'mm/dd/yyyy'. 必须指定结束时间."></div>
                 </div>
                 <div class="setting-field">
                     <input type="text" id="history-filter-end-date" class="history-small-input"/>
@@ -61,7 +61,7 @@
             <div class="end-time-setting">
                 <div class="setting-name">
                     结束时间 (<span class="timezone"></span>)
-                    <div class="fa fa-question-circle" alt="Info" title="The end time in the format 'hh:mm:ss'. Must also specify end date."></div>
+                    <div class="fa fa-question-circle" alt="Info" title="结束时间格式 'hh:mm:ss'. 必须指定结束日期."></div>
                 </div>
                 <div class="setting-field">
                     <input type="text" id="history-filter-end-time" class="history-small-input"/>

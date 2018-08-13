@@ -16,20 +16,20 @@
 --%>
 <%@ page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <div id="settings" class="hidden">
-    <div id="settings-header-text" class="settings-header-text">NiFi Settings</div>
+    <div id="settings-header-text" class="settings-header-text">NiFi 设置</div>
     <div class="settings-container">
         <div>
             <div id="settings-tabs" class="settings-tabs tab-container"></div>
             <div class="clear"></div>
         </div>
         <div id="settings-tabs-content">
-            <button id="new-service-or-task" class="add-button fa fa-plus" title="Create a new reporting task controller service" style="display: block;"></button>
+            <button id="new-service-or-task" class="add-button fa fa-plus" title="创建新的报告任务控制器服务" style="display: block;"></button>
             <div id="general-settings-tab-content" class="configuration-tab">
                 <div id="general-settings">
                     <div class="setting">
                         <div class="setting-name">
                             最大定时器驱动的线程数
-                            <div class="fa fa-question-circle" alt="Info" title="The maximum number of threads for timer driven processors available to the system."></div>
+                            <div class="fa fa-question-circle" alt="Info" title="系统可用的定时器驱动处理器的最大线程数."></div>
                         </div>
                         <div class="editable setting-field">
                             <input type="text" id="maximum-timer-driven-thread-count-field" class="setting-input"/>
@@ -41,7 +41,7 @@
                     <div class="setting">
                         <div class="setting-name">
                             最大事件驱动的线程数
-                            <div class="fa fa-question-circle" alt="Info" title="The maximum number of threads for event driven processors available to the system."></div>
+                            <div class="fa fa-question-circle" alt="Info" title="系统可用的事件驱动处理器的最大线程数."></div>
                         </div>
                         <div class="editable setting-field">
                             <input type="text" id="maximum-event-driven-thread-count-field" class="setting-input"/>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="editable settings-buttons">
-                        <div id="settings-save" class="button">Apply</div>
+                        <div id="settings-save" class="button">应用</div>
                         <div class="clear"></div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
         </div>
     </div>
     <div id="settings-refresh-container">
-        <button id="settings-refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
+        <button id="settings-refresh-button" class="refresh-button pointer fa fa-refresh" title="刷新"></button>
         <div id="settings-last-refreshed-container" class="last-refreshed-container">
             上次更新:&nbsp;<span id="settings-last-refreshed" class="value-color"></span>
         </div>

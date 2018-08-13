@@ -49,19 +49,19 @@
         <div class="fa fa-check" title="最新的版本化流程组">
             <span id="controller-up-to-date-count">{{appCtrl.serviceProvider.headerCtrl.flowStatusCtrl.controllerUpToDateCount}}</span>
         </div>
-        <div class="fa fa-asterisk" title="Locally modified Versioned Process Groups">
+        <div class="fa fa-asterisk" title="本地修改的版本化流程组">
             <span id="controller-locally-modified-count">{{appCtrl.serviceProvider.headerCtrl.flowStatusCtrl.controllerLocallyModifiedCount}}</span>
         </div>
-        <div class="fa fa-arrow-circle-up" title="Stale Versioned Process Groups">
+        <div class="fa fa-arrow-circle-up" title="陈旧的版本化流程组">
             <span id="controller-stale-count">{{appCtrl.serviceProvider.headerCtrl.flowStatusCtrl.controllerStaleCount}}</span>
         </div>
-        <div class="fa fa-exclamation-circle" title="Locally modified and stale Versioned Process Groups">
+        <div class="fa fa-exclamation-circle" title="本地修改和陈旧的版本化流程组">
             <span id="controller-locally-modified-and-stale-count">{{appCtrl.serviceProvider.headerCtrl.flowStatusCtrl.controllerLocallyModifiedAndStaleCount}}</span>
         </div>
-        <div class="fa fa-question" title="Sync failure Versioned Process Groups">
+        <div class="fa fa-question" title="同步失败版本化流程组">
             <span id="controller-sync-failure-count">{{appCtrl.serviceProvider.headerCtrl.flowStatusCtrl.controllerSyncFailureCount}}</span>
         </div>
-        <div class="fa fa-refresh" title="Last refresh">
+        <div class="fa fa-refresh" title="上次刷新">
             <span id="stats-last-refreshed">{{appCtrl.serviceProvider.headerCtrl.flowStatusCtrl.statsLastRefreshed}}</span>
         </div>
         <div id="canvas-loading-container" class="loading-container"></div>
@@ -69,7 +69,7 @@
     <div layout="row" layout-align="end center">
         <div id="search-container">
             <button id="search-button" ng-click="appCtrl.serviceProvider.headerCtrl.flowStatusCtrl.search.toggleSearchField();"><i class="fa fa-search"></i></button>
-            <input id="search-field" type="text" placeholder="Search"/>
+            <input id="search-field" type="text" placeholder="搜索"/>
         </div>
         <button id="bulletin-button"><i class="fa fa-sticky-note-o"></i></button>
     </div>

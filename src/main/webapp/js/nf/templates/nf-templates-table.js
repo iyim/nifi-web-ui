@@ -310,7 +310,7 @@
             var templatesColumns = [
                 {
                     id: 'timestamp',
-                    name: 'Date/Time',
+                    name: '日期/时间',
                     sortable: true,
                     defaultSortAsc: false,
                     resizable: false,
@@ -320,21 +320,21 @@
                 },
                 {
                     id: 'name',
-                    name: 'Name',
+                    name: '名称',
                     sortable: true,
                     resizable: true,
                     formatter: nameFormatter
                 },
                 {
                     id: 'description',
-                    name: 'Description',
+                    name: '描述',
                     sortable: true,
                     resizable: true,
                     formatter: descriptionFormatter
                 },
                 {
                     id: 'groupId',
-                    name: 'Process Group Id',
+                    name: '流程组 ID',
                     sortable: true,
                     resizable: true,
                     formatter: groupIdFormatter

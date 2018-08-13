@@ -618,7 +618,7 @@
 
             // define a custom formatter for the more details column
             var moreDetailsFormatter = function (row, cell, value, columnDef, dataContext) {
-                return '<div title="View Details" class="pointer show-event-details fa fa-info-circle"></div>';
+                return '<div title="查看详情" class="pointer show-event-details fa fa-info-circle"></div>';
             };
 
             // define how general values are formatted
@@ -660,7 +660,7 @@
                 },
                 {
                     id: 'eventTime',
-                    name: 'Date/Time',
+                    name: '日期/时间',
                     field: 'eventTime',
                     sortable: true,
                     defaultSortAsc: false,
@@ -669,7 +669,7 @@
                 },
                 {
                     id: 'eventType',
-                    name: 'Type',
+                    name: '活动类型',
                     field: 'eventType',
                     sortable: true,
                     resizable: true,
@@ -677,7 +677,7 @@
                 },
                 {
                     id: 'flowFileUuid',
-                    name: 'FlowFile Uuid',
+                    name: '流文件 Uuid',
                     field: 'flowFileUuid',
                     sortable: true,
                     resizable: true,
@@ -685,7 +685,7 @@
                 },
                 {
                     id: 'fileSize',
-                    name: 'Size',
+                    name: '文件大小',
                     field: 'fileSize',
                     sortable: true,
                     defaultSortAsc: false,
@@ -694,7 +694,7 @@
                 },
                 {
                     id: 'componentName',
-                    name: 'Component Name',
+                    name: '组件名',
                     field: 'componentName',
                     sortable: true,
                     resizable: true,
@@ -702,7 +702,7 @@
                 },
                 {
                     id: 'componentType',
-                    name: 'Component Type',
+                    name: '组件类型',
                     field: 'componentType',
                     sortable: true,
                     resizable: true,
@@ -714,7 +714,7 @@
             if (isClustered) {
                 provenanceColumns.push({
                     id: 'clusterNodeAddress',
-                    name: 'Node',
+                    name: '节点',
                     field: 'clusterNodeAddress',
                     sortable: true,
                     resizable: true,
@@ -1356,33 +1356,33 @@
 
                     // conditionally show RECEIVE details
                     if (event.eventType === 'RECEIVE') {
-                        formatEventDetail('Source FlowFile Id', event.sourceSystemFlowFileId);
-                        formatEventDetail('Transit Uri', event.transitUri);
+                        formatEventDetail('源流文件 Id', event.sourceSystemFlowFileId);
+                        formatEventDetail('传输 Uri', event.transitUri);
                     }
 
                     // conditionally show SEND details
                     if (event.eventType === 'SEND') {
-                        formatEventDetail('Transit Uri', event.transitUri);
+                        formatEventDetail('传输 Uri', event.transitUri);
                     }
 
                     // conditionally show REMOTE_INVOCATION details
                     if (event.eventType === 'REMOTE_INVOCATION') {
-                        formatEventDetail('Transit Uri', event.transitUri);
+                        formatEventDetail('传输 Uri', event.transitUri);
                     }
 
                     // conditionally show ADDINFO details
                     if (event.eventType === 'ADDINFO') {
-                        formatEventDetail('Alternate Identifier Uri', event.alternateIdentifierUri);
+                        formatEventDetail('替代标识符 Uri', event.alternateIdentifierUri);
                     }
 
                     // conditionally show ROUTE details
                     if (event.eventType === 'ROUTE') {
-                        formatEventDetail('Relationship', event.relationship);
+                        formatEventDetail('关系', event.relationship);
                     }
 
                     // conditionally show FETCH details
                     if (event.eventType === 'FETCH') {
-                        formatEventDetail('Transit Uri', event.transitUri);
+                        formatEventDetail('传输 Uri', event.transitUri);
                     }
 
                     // conditionally show the cluster node identifier
@@ -1391,7 +1391,7 @@
                         $('#provenance-event-cluster-node-id').text(event.clusterNodeId);
 
                         // render the cluster node address
-                        formatEventDetail('Node Address', event.clusterNodeAddress);
+                        formatEventDetail('节点地址', event.clusterNodeAddress);
                     }
 
                     // populate the parent/child flowfile uuids

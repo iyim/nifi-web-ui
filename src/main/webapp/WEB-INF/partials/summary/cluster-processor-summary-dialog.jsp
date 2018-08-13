@@ -30,7 +30,7 @@
         </div>
         <div id="cluster-processor-summary-table"></div>
     </div>
-    <button id="cluster-processor-refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
+    <button id="cluster-processor-refresh-button" class="refresh-button pointer fa fa-refresh" title="刷新"></button>
     <div id="cluster-processor-summary-last-refreshed-container" class="last-refreshed-container">
         上次更新:&nbsp;<span id="cluster-processor-summary-last-refreshed" class="value-color"></span>
     </div>

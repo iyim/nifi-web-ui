@@ -160,7 +160,7 @@
                     <div class="setting">
                         <div class="setting-name">
                             核心负载平均值:
-                            <div class="fa fa-question-circle" alt="Info" title="Core load average for the last minute. Not available on all platforms."></div>
+                            <div class="fa fa-question-circle" alt="Info" title="最后一分钟的核心负载平均值。并非适用于所有平台."></div>
                         </div>
                         <div class="setting-field">
                             <div id="processor-load-average"></div>
@@ -202,7 +202,7 @@
                     <div class="setting-header">Java</div>
                     <dl class="setting-attributes-list">
                         <dt>版本</dt><dd><span id="version-java-version"></span></dd>
-                        <dt>Vendor</dt><dd><span id="version-java-vendor"></span></dd>
+                        <dt>供应商</dt><dd><span id="version-java-vendor"></span></dd>
                     </dl>
                 </div>
                 <div class="setting">
@@ -216,7 +216,7 @@
             </div>
         </div>
         <div id="system-diagnostics-refresh-container">
-            <button id="system-diagnostics-refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
+            <button id="system-diagnostics-refresh-button" class="refresh-button pointer fa fa-refresh" title="刷新"></button>
             <div id="system-diagnostics-last-refreshed-container" class="last-refreshed-container">
                 <span id="system-diagnostics-last-refreshed" class="value-color"></span>
             </div>
