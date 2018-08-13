@@ -26,7 +26,7 @@
 </nf-breadcrumbs>
 <div id="graph-controls">
     <div id="navigation-control" class="graph-control">
-        <div class="graph-control-docked pointer fa fa-compass" title="Navigate"
+        <div class="graph-control-docked pointer fa fa-compass" title="导航"
              ng-click="appCtrl.serviceProvider.graphControlsCtrl.undock($event)">
         </div>
         <div class="graph-control-header-container hidden pointer"
@@ -41,22 +41,22 @@
         </div>
         <div class="graph-control-content hidden">
             <div id="navigation-buttons">
-                <div id="naviagte-zoom-in" class="action-button" title="Zoom In"
+                <div id="naviagte-zoom-in" class="action-button" title="放大"
                      ng-click="appCtrl.serviceProvider.graphControlsCtrl.navigateCtrl.zoomIn();">
                     <button><div class="graph-control-action-icon fa fa-search-plus"></div></button>
                 </div>
                 <div class="button-spacer-small">&nbsp;</div>
-                <div id="naviagte-zoom-out" class="action-button" title="Zoom Out"
+                <div id="naviagte-zoom-out" class="action-button" title="缩小"
                      ng-click="appCtrl.serviceProvider.graphControlsCtrl.navigateCtrl.zoomOut();">
                     <button><div class="graph-control-action-icon fa fa-search-minus"></div></button>
                 </div>
                 <div class="button-spacer-large">&nbsp;</div>
-                <div id="naviagte-zoom-fit" class="action-button" title="Fit"
+                <div id="naviagte-zoom-fit" class="action-button" title="适应大小"
                      ng-click="appCtrl.serviceProvider.graphControlsCtrl.navigateCtrl.zoomFit();">
                     <button><div class="graph-control-action-icon icon icon-zoom-fit"></div></button>
                 </div>
                 <div class="button-spacer-small">&nbsp;</div>
-                <div id="naviagte-zoom-actual-size" class="action-button" title="Actual"
+                <div id="naviagte-zoom-actual-size" class="action-button" title="实际大小"
                      ng-click="appCtrl.serviceProvider.graphControlsCtrl.navigateCtrl.zoomActualSize();">
                     <button><div class="graph-control-action-icon icon icon-zoom-actual"></div></button>
                 </div>
@@ -66,7 +66,7 @@
         </div>
     </div>
     <div id="operation-control" class="graph-control">
-        <div class="graph-control-docked pointer fa fa-hand-o-up" title="Operate"
+        <div class="graph-control-docked pointer fa fa-hand-o-up" title="操作"
              ng-click="appCtrl.serviceProvider.graphControlsCtrl.undock($event)">
         </div>
         <div class="graph-control-header-container hidden pointer"
