@@ -1088,18 +1088,18 @@
                 sortable: true,
                 width: 90,
                 maxWidth: 90,
-                toolTip: 'Sorts based on presence of bulletins'
+                toolTip: '根据公告的展示进行排序'
             },
             {
                 id: 'name',
-                name: 'Name',
+                name: '名称',
                 sortable: true,
                 resizable: true,
                 formatter: nameFormatter
             },
             {
                 id: 'type',
-                name: 'Type',
+                name: '类型',
                 formatter: nfCommon.instanceTypeFormatter,
                 sortable: true,
                 resizable: true
@@ -1113,7 +1113,7 @@
             },
             {
                 id: 'state',
-                name: 'Run Status',
+                name: '运行状态',
                 sortable: true,
                 resizeable: true,
                 formatter: reportingTaskRunStatusFormatter

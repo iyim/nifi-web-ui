@@ -421,7 +421,7 @@
                 sortable: true,
                 width: 50,
                 maxWidth: 50,
-                toolTip: 'Sorts based on presence of bulletins'
+                toolTip: '根据公告的展示进行排序'
             },
             nameColumn,
             {
